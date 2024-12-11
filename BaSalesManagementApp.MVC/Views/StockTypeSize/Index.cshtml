@@ -1,0 +1,137 @@
+﻿@model IPagedList<StockTypeSizeListVM>
+@using Microsoft.Extensions.Localization
+@using X.PagedList.Mvc.Common
+@using X.PagedList.Mvc.Core
+@using X.PagedList
+@using X.PagedList.Mvc.Core.Common
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Resource> localizer
+
+@{
+    ViewData["Title"] = localizer["StockTypeSizeIndex"];
+    var CurrentSort = ViewBag.CurrentSort as string;
+    var NameSortParm = (String.IsNullOrEmpty(CurrentSort)) ? "sizeName_asc" : "sizeName_desc";
+    var DateSortParm = (CurrentSort == "date_asc") ? "date_asc" : "date_desc";
+}
+
+<div class="content-wrapper">
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <h4 class="py-3 mb-4">
+            <span class="text-muted fw-light">@localizer["StockTypeSize"] /</span>
+            @localizer["List"]
+        </h4>
+
+        <div class="d-flex justify-content-between mb-2">
+            <a asp-action="Create" class="btn btn-primary">@localizer["Create_New"]</a>
+            <div class="dropdown ms-auto">
+                <button type="button" class="btn btn-primary" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                    <i class="bi bi-filter" style="font-size: 1rem;"></i>
+                </button>
+                <div class="dropdown-menu">
+                    <a asp-action="Index" asp-route-sortOrder="sizeName_asc"
+                       class="dropdown-item @(ViewBag.CurrentSort == "sizeName_asc" ? "active" : "")">
+                        A-Z
+                    </a>
+                    <a asp-action="Index" asp-route-sortOrder="sizeName_desc"
+                       class="dropdown-item @(ViewBag.CurrentSort == "sizeName_desc" ? "active" : "")">
+                        Z-A
+                    </a>
+                    <a asp-action="Index" asp-route-sortOrder="date_desc"
+                       class="dropdown-item @(ViewBag.CurrentSort == "date_desc" ? "active" : "")">
+                        @localizer["Newest_First"]
+                    </a>
+                    <a asp-action="Index" asp-route-sortOrder="date_asc"
+                       class="dropdown-item @(ViewBag.CurrentSort == "date_asc" ? "active" : "")">
+                        @localizer["Oldest_First"]
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="table-responsive text-nowrap">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>@localizer["Size"]</th>
+                            <th>@localizer["Description"]</th>
+                            <th>@localizer["CreatedDate"]</th>
+                            <th class="text-end">@localizer["Actions"]</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-border-bottom-0">
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="fw-medium">@Html.DisplayFor(modelItem => item.Size)</td>
+                                <td class="fw-medium">@Html.DisplayFor(modelItem => item.Description)</td>
+                                <td class="fw-medium">@Html.DisplayFor(modelItem => item.CreatedDate)</td>
+                                <td class="text-end">
+                                    <div class="dropdown">
+                                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown" style="margin-right: 28px;">
+                                            <i class="bx bx-dots-vertical-rounded"></i>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a asp-action="Details" asp-route-stockTypeSizeId="@item.Id" class="dropdown-item"><i class="bx bx-info-circle me-1"></i> @localizer["Details"]</a>
+                                            <a asp-action="Update" asp-route-stockTypeSizeId="@item.Id" class="dropdown-item"><i class="bx bx-edit-alt me-1"></i>  @localizer["Update"]</a>
+                                            <a href="javascript:;" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#deleteModal" data-stockTypeSize-id="@item.Id">
+                                                <i class="bx bx-trash me-1"></i>  @localizer["Delete"]
+                                            </a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <div class="d-flex justify-content-center mt-3">
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort }), new PagedListRenderOptions
+           {
+               Display = PagedListDisplayMode.Always,
+               UlElementClasses = new[] { "pagination", "justify-content-center" },
+               LiElementClasses = new[] { "page-item" },
+               PageClasses = new[] { "page-link" },
+               LinkToPreviousPageFormat = @localizer["Previous"],
+               LinkToNextPageFormat = @localizer["Next"],
+               LinkToFirstPageFormat = @localizer["First"],
+               LinkToLastPageFormat = @localizer["Last"],
+               ContainerDivClasses = new[] { "d-flex", "justify-content-center" }
+           })
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Delete Confirmation Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">@localizer["DELETE_CONFIRM_TITLE_STOCK_TYPE_SIZE"]</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                @localizer["DELETE_CONFIRM_STOCK_TYPE_SIZE"]
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">@localizer["CANCEL_STOCK_TYPE_SIZE"]</button>
+                <a id="confirmDeleteButton" href="#" class="btn btn-danger">@localizer["DELETE_STOCK_TYPE_SIZE"]</a>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var deleteModal = document.getElementById('deleteModal');
+            deleteModal.addEventListener('show.bs.modal', function (event) {
+                var button = event.relatedTarget;
+                var stockTypeSizeId = button.getAttribute('data-stockTypeSize-id');
+                var confirmDeleteButton = deleteModal.querySelector('#confirmDeleteButton');
+                confirmDeleteButton.href = '/StockTypeSize/Delete?stockTypeSizeId=' + stockTypeSizeId;
+            });
+        });
+    </script>
+}

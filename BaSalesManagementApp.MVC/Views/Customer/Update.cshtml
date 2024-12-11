@@ -1,0 +1,130 @@
+﻿@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Resource> localizer
+@model BaSalesManagementApp.MVC.Models.CustomerVMs.CustomerUpdateVM
+
+@{
+    ViewData["Title"] = localizer["Update"];
+}
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+
+<div class="content-wrapper">
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <h4 class="py-3 mb-4">
+            <span class="text-muted fw-light">@Html.Raw(localizer["Customer"]) /</span> @Html.Raw(localizer["Update"])
+        </h4>
+        <div class="row">
+            <div class="content-wrapper">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <form asp-action="Update">
+                                <input type="hidden" asp-for="Id" class="form-control" />
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                                <div class="mb-3">
+                                    <label asp-for="Name" class="form-label">@Html.Raw(localizer["Name"])</label>
+                                    <input asp-for="Name" class="form-control" />
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label asp-for="CountryId" class="form-label">@Html.Raw(localizer["Country"])</label>
+                                    <select asp-for="CountryId" class="form-control" id="CountryId">
+                                        @if (Model.Countries != null)
+                                        {
+                                            foreach (var country in Model.Countries)
+                                            {
+                                                <option value="@country.Id">@country.Name</option>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <option value="" disabled selected>@Html.Raw(localizer["NoCountryFound"])</option>
+                                        }
+                                    </select>
+                                    <span asp-validation-for="CountryId" class="text-danger"></span>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label asp-for="CityId" class="form-label">@Html.Raw(localizer["City"])</label>
+                                    <select asp-for="CityId" class="form-control" id="CityId">
+                                        @if (Model.Cities != null)
+                                        {
+                                            foreach (var city in Model.Cities)
+                                            {
+                                                <option value="@city.Id">@city.Name</option>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <option value="" disabled selected>@Html.Raw(localizer["NoCityFound"])</option>
+                                        }
+                                    </select>
+                                    <span asp-validation-for="CityId" class="text-danger"></span>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label asp-for="Address" class="form-label">@Html.Raw(localizer["Address"])</label>
+                                    <input asp-for="Address" class="form-control" />
+                                    <span asp-validation-for="Address" class="text-danger"></span>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label asp-for="Phone" class="form-label">@localizer["Phone"]</label>
+                                    <input asp-for="Phone" class="form-control" />
+                                    <span asp-validation-for="Phone" class="text-danger"></span>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label asp-for="CompanyId" class="form-label">@Html.Raw(localizer["Company"])</label>
+                                    <select asp-for="CompanyId" class="form-control">
+                                        @if (Model.Companies != null)
+                                        {
+                                            foreach (var company in Model.Companies)
+                                            {
+                                                <option value="@company.Id">@company.Name</option>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <option value="" disabled selected>@Html.Raw(localizer["NoCompanyFound"])</option>
+                                        }
+                                    </select>
+                                    <span asp-validation-for="CompanyId" class="text-danger"></span>
+                                </div>
+
+                                <div>
+                                    <input type="submit" value="@Html.Raw(localizer["Update"])" class="btn btn-primary" />
+                                    <a asp-action="Index" class="btn btn-secondary">@Html.Raw(localizer["BackToList"])</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    
+
+    <script>
+       
+
+            $('#CityId').select2({
+                placeholder: '@Html.Raw(localizer["SelectCity"])',
+                allowClear: true
+            });
+
+            $('#CountryId').select2({
+                placeholder: '@Html.Raw(localizer["SelectCountry"])',
+                allowClear: true
+            });
+        
+    </script>
+}

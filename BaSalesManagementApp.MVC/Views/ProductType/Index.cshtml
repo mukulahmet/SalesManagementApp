@@ -1,0 +1,112 @@
+﻿@model IPagedList<BaSalesManagementApp.MVC.Models.ProductTypeVMs.ProductTypeListVM>
+@using Microsoft.Extensions.Localization
+@using X.PagedList.Mvc.Common
+@using X.PagedList.Mvc.Core
+@using X.PagedList
+@using X.PagedList.Mvc.Core.Common
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Resource> localizer
+
+
+@{
+    ViewData["Title"] = localizer["ProductTypeList"];
+}
+
+<div class="content-wrapper">
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <h4 class="py-3 mb-4">
+            <span class="text-muted fw-light"> @localizer["ProductType"] /</span>  @localizer["List"]
+        </h4>
+        <p>
+            <a asp-action="Add" class="btn btn-primary"> @localizer["Create_New"]</a>
+        </p>
+        <div class="card">
+            <div class="table-responsive text-nowrap">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                @localizer["Name"]
+                            </th>
+                            <th class="text-end">@localizer["Actions"]</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-border-bottom-0">
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="fw-medium">@Html.DisplayFor(modelItem => item.Name)</td>
+                                <td class="text-end">
+                                    <div class="dropdown">
+                                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown" style="margin-right: 28px;">
+                                            <i class="bx bx-dots-vertical-rounded"></i>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a asp-action="Detail" asp-route-productTypeId="@item.Id" class="dropdown-item">
+                                                <i class="bx bx-info-circle me-1"></i> @localizer["Details"]
+                                            </a>
+                                            <a asp-action="Update" asp-route-productTypeId="@item.Id" class="dropdown-item">
+                                                <i class="bx bx-edit-alt me-1"></i> @localizer["Update"]
+                                            </a>
+                                            <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal-@item.Id">
+                                                <i class="bx bx-trash me-1"></i> @localizer["Delete"]
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Silme Onayı Modalı -->
+                                    <div class="modal fade" id="confirmDeleteModal-@item.Id" tabindex="-1" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="confirmDeleteModalLabel">@localizer["DELETE_CONFIRM_TITLE_PRODUCT_TYPE"]</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="@localizer["CLOSE"]"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    @localizer["DELETE_CONFIRM_PRODUCT_TYPE"]
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">@localizer["CANCEL_PRODUCT_TYPE"]</button>
+                                                    <a asp-action="Delete" asp-route-productTypeId="@item.Id" class="btn btn-danger">@localizer["DELETE_PRODUCT_TYPE"]</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <div class="d-flex justify-content-center mt-3">
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), new PagedListRenderOptions
+           {
+               Display = PagedListDisplayMode.Always,
+               UlElementClasses = new[] { "pagination", "justify-content-center" },
+               LiElementClasses = new[] { "page-item" },
+               PageClasses = new[] { "page-link" },
+               LinkToPreviousPageFormat = @localizer["Previous"],
+               LinkToNextPageFormat = @localizer["Next"],
+               LinkToFirstPageFormat = @localizer["First"],
+               LinkToLastPageFormat = @localizer["Last"],
+               ContainerDivClasses = new[] { "d-flex", "justify-content-center" }
+           })
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var deleteModal = document.getElementById('deleteModal');
+            deleteModal.addEventListener('show.bs.modal', function (event) {
+                var button = event.relatedTarget;
+                var productTypeId = button.getAttribute('data-product-type-id');
+                var confirmDeleteButton = deleteModal.querySelector('#confirmDeleteButton');
+                confirmDeleteButton.href = '/ProductType/Delete?productTypeId=' + productTypeId;
+            });
+        });
+    </script>
+}

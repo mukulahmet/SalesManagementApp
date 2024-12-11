@@ -1,0 +1,82 @@
+﻿@model BaSalesManagementApp.MVC.Models.BranchVMs.BranchCreateVM
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Resource> localizer
+
+@{
+    ViewData["Title"] = localizer["Create"];
+}
+
+<div class="content-wrapper">
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <h4 class="py-3 mb-4">
+            <span class="text-muted fw-light">@localizer["Branch"] /</span> @localizer["Create"]
+        </h4>
+        <div class="row">
+            <div class="content-wrapper">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <form asp-action="Create">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                                
+
+                                <div class="mb-3">
+                                    <label asp-for="Name" class="form-label">@localizer["Name"]</label>
+                                    <input asp-for="Name" class="form-control" />
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label asp-for="Address" class="form-label">@localizer["Address"]</label>
+                                    <input asp-for="Address" class="form-control" />
+                                    <span asp-validation-for="Address" class="text-danger"></span>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label asp-for="CompanyId" class="form-label">@localizer["Company"]</label>
+                                    <select asp-for="CompanyId" class="form-control" id="companySelect">
+                                        <option value="">@localizer["Select_a_Product"]</option>
+                                        @foreach (var company in Model.Companies)
+                                        {
+                                            <option value="@company.Id">@company.Name</option>
+                                        }
+                                    </select>
+                                    <span asp-validation-for="CompanyId" class="text-danger"></span>
+                                </div>
+
+                                <div>
+                                    <input type="submit" value="@localizer["Create"]" class="btn btn-primary" />
+                                    <a asp-action="Index" class="btn btn-secondary">@localizer["BackToList"]</a>
+                                </div>
+
+                                @for (int i = 0; i < Model.Companies.Count(); i++)
+                                {
+                                    <input type="hidden" name="Companies[@i].Id" value="@Model.Companies.ElementAt(i).Id" />
+                                    <input type="hidden" name="Companies[@i].Name" value="@Model.Companies.ElementAt(i).Name" />
+                                }
+                                <!-- Diğer özellikler için de gizli input'lar ekleyin -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#companySelect').select2({
+                placeholder: "@localizer["Select_a_Company"]",
+                allowClear: true
+            });
+        });
+    </script>
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

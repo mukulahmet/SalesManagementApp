@@ -1,0 +1,72 @@
+﻿@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Resource> localizer
+
+@model CityCreateVM
+
+@{
+    ViewData["Title"] = @localizer["Create"];
+}
+<div class="content-wrapper">
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <div class="row">
+            <div class="content-wrapper">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <form asp-action="Create" asp-controller="City" method="post">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <div class="mb-3">
+                                    <label asp-for="Name" class="form-label"> @localizer["Name"]</label>
+                                    <input asp-for="Name" class="form-control" />
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                </div>
+                                @*  <div class="mb-3">
+                                <label asp-for="CountryId" class="form-label"> @localizer["Country"]</label>
+                                <select asp-for="CountryId" class="form-control" id="country-select">
+                                <option value="">@localizer["Select Country"]</option>
+                                @foreach (var country in Model.Countries)
+                                {
+                                <option value="@country.Id">@country.Name</option>
+                                }
+                                </select>
+                                <span asp-validation-for="CountryId" class="text-danger"></span>
+                                </div> *@
+                                <div class="mb-3">
+                                    <label asp-for="CountryId" class="form-label"> @localizer["Country"]</label>
+                                    <select asp-for="CountryId" class="form-control" id="country-select">
+                                        <option value="">@localizer["Select Country"]</option>
+                                        @foreach (var country in Model.Countries)
+                                        {
+                                            <option value="@country.Id">@country.Name</option>
+                                        }
+                                    </select>
+                                    <span asp-validation-for="CountryId" class="text-danger"></span>
+                                </div>
+                                <div>
+                                    <input type="submit" value="@localizer["Create"]" class="btn btn-primary" />
+                                    <a asp-action="Index" class="btn btn-secondary">
+                                        @localizer["BackToList"]
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    @*  <script>
+        $(document).ready(function () {
+            $('#country-select').select2({
+                placeholder: "Select Country",
+                allowClear: true,
+                language: {
+                    noResults: function () {
+                        return "No matching results";
+                            }
+                        }
+                    });
+                });
+    </script> *@
+}

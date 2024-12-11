@@ -1,0 +1,66 @@
+﻿@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Resource> localizer
+@model BaSalesManagementApp.MVC.Models.AdminVMs.AdminUpdateVM
+@{
+    ViewData["Title"] = localizer["Update"];
+}
+
+<div class="content-wrapper">
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <h5 class="py-3 mb-4">
+            <span class="text-muted fw-light">@localizer["Admin"] /</span> @localizer["Update"]
+        </h5>
+        <div class="row">
+            <div class="content-wrapper">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <form asp-action="Update" method="post" enctype="multipart/form-data">
+                                <input type="hidden" asp-for="Id" />
+
+                                <div class="mb-3">
+                                    <label asp-for="FirstName" class="form-label">@localizer["FirstName"]</label>
+                                    <input asp-for="FirstName" class="form-control" />
+                                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label asp-for="LastName" class="form-label">@localizer["LastName"]</label>
+                                    <input asp-for="LastName" class="form-control" />
+                                    <span asp-validation-for="LastName" class="text-danger"></span>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label asp-for="Email" class="form-label">@localizer["Email"]</label>
+                                    <input type="email" asp-for="Email" class="form-control" />
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label asp-for="Photo" class="form-label">@localizer["Photo"]</label>
+
+                                    @if (Model.PhotoUrl != null)
+                                    {
+                                        <img src="@Model.PhotoUrl" alt="Current Photo" class="img-thumbnail mb-2" style="max-width: 200px;" />
+                                    }
+
+                                    <input asp-for="Photo" type="file" class="form-control" accept=".jpg,.jpeg,.png,.gif,.tiff,.bmp" />
+                                    <span asp-validation-for="Photo" class="text-danger"></span>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">@localizer["Update"]</button>
+                                <a asp-action="Index" class="btn btn-secondary">@localizer["BackToList"]</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

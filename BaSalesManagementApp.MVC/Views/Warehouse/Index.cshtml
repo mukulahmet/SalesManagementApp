@@ -1,0 +1,168 @@
+﻿@model IPagedList<WarehouseListVM>
+@using Microsoft.Extensions.Localization
+@using X.PagedList.Mvc.Common
+@using X.PagedList.Mvc.Core
+@using X.PagedList
+@using X.PagedList.Mvc.Core.Common
+
+
+@{
+    ViewData["Title"] = localizer["Warehouse_Index"];
+}
+
+
+<div class="content-wrapper">
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <h4 class="py-3 mb-4">
+            <span class="text-muted fw-light">@localizer["Warehouse"] /</span>
+            @localizer["List"]
+        </h4>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <a asp-action="Create" class="btn btn-primary">@localizer["Create_New"]</a>
+            <div id="sortOrder" class="dropdown">
+                <button class="btn btn-primary" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="bi bi-filter" style="font-size:1rem"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" data-value="alphabetical" href="#">A-Z</a></li>
+                    <li><a class="dropdown-item" data-value="alphabeticaldesc" href="#">Z-A</a></li>
+                    <a class="dropdown-item" data-value="date" href="#">@localizer["Newest_First"]</a>
+                    <a class="dropdown-item" data-value="datedesc" href="#">@localizer["Oldest_First"]</a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="table-responsive text-nowrap">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>@localizer["Name"]</th>
+                            <th>@localizer["Address"]</th>
+                            <th>@localizer["BranchName"]</th>
+                            <th class="text-end">@localizer["Actions"]</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-border-bottom-0">
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="fw-medium">@Html.DisplayFor(modelItem => item.Name)</td>
+                                <td class="fw-medium">@Html.DisplayFor(modelItem => item.Address)</td>
+                                <td class="fw-medium">@Html.DisplayFor(modelItem => item.BranchName)</td>
+                                <td class="text-end">
+                                    <div class="dropdown">
+                                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown" style="margin-right: 28px;">
+                                            <i class="bx bx-dots-vertical-rounded"></i>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a asp-action="Details" asp-route-warehouseId="@item.Id" class="dropdown-item"><i class="bx bx-info-circle me-1"></i> @localizer["Details"]</a>
+                                            <a asp-action="Update" asp-route-warehouseId="@item.Id" class="dropdown-item"><i class="bx bx-edit-alt me-1"></i>@localizer["Update"]</a>
+
+                                            <a href="javascript:;" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#deleteModal" data-warehouse-id="@item.Id">
+                                                <i class="bx bx-trash me-1"></i>  @localizer["Delete"]
+                                            </a>
+
+
+
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <div class="d-flex justify-content-center mt-3">
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), new PagedListRenderOptions
+           {
+               Display = PagedListDisplayMode.Always,
+               UlElementClasses = new[] { "pagination", "justify-content-center" },
+               LiElementClasses = new[] { "page-item" },
+               PageClasses = new[] { "page-link" },
+               LinkToPreviousPageFormat = @localizer["Previous"],
+               LinkToNextPageFormat = @localizer["Next"],
+               LinkToFirstPageFormat = @localizer["First"],
+               LinkToLastPageFormat = @localizer["Last"],
+               ContainerDivClasses = new[] { "d-flex", "justify-content-center" }
+           })
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Delete Confirmation Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">@localizer["DELETE_CONFIRM_TITLE_WAREHOUSE"]</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                @localizer["DELETE_CONFIRM_WAREHOUSE"]
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">@localizer["CANCEL_WAREHOUSE"]</button>
+                <a id="confirmDeleteButton" href="#" class="btn btn-danger">@localizer["DELETE_WAREHOUSE"]</a>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var deleteModal = document.getElementById('deleteModal');
+            deleteModal.addEventListener('show.bs.modal', function (event) {
+                var button = event.relatedTarget;
+                var warehouseId = button.getAttribute('data-warehouse-id');
+                var confirmDeleteButton = deleteModal.querySelector('#confirmDeleteButton');
+                confirmDeleteButton.href = '/Warehouse/Delete?warehouseId=' + warehouseId;
+            });
+            var sortOrderSelect = document.getElementById('sortOrder');
+            var sortOrderLinks = sortOrderSelect.querySelectorAll('.dropdown-item');
+
+            function updateSortOrderFromUrl() {
+                var urlParams = new URLSearchParams(window.location.search);
+                var sortOrder = urlParams.get('sortOrder') || 'alphabetical';
+                sortOrderLinks.forEach(function (link) {
+                    if (link.getAttribute('data-value') === sortOrder) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                });
+            }
+
+            function updatePageLinks() {
+                var selectedSortOrder = document.querySelector('.dropdown-item.active').getAttribute('data-value');
+
+                document.querySelectorAll('.pagination a').forEach(function (link) {
+                    var href = link.getAttribute('href');
+                    var url = new URL(href, window.location.href);
+                    var urlParams = new URLSearchParams(url.search);
+
+                    urlParams.set('sortOrder', selectedSortOrder);
+                    url.search = urlParams.toString();
+
+                    link.setAttribute('href', url.toString());
+                });
+            }
+
+            function handleSortOrderChange(event) {
+                var selectedSortOrder = event.target.getAttribute('data-value');
+                var urlParams = new URLSearchParams(window.location.search);
+                urlParams.set('sortOrder', selectedSortOrder);
+                urlParams.set('page', 1);
+                window.location.search = urlParams.toString();
+            }
+
+            sortOrderLinks.forEach(function (link) {
+                link.addEventListener('click', handleSortOrderChange);
+            });
+
+            updateSortOrderFromUrl();
+            updatePageLinks();
+        });
+
+    </script>
+}

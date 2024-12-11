@@ -1,0 +1,51 @@
+﻿@model BaSalesManagementApp.MVC.Models.BranchVMs.BranchDetailsVM
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Resource> localizer
+
+@{
+    ViewData["Title"] = localizer["Branch_Details"];
+}
+
+<div class="content-wrapper">
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <h4 class="py-3 mb-4">@ViewData["Title"]</h4>
+        <div class="row">
+            <div class="content-wrapper">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <dl class="row">
+                                <dt class="col-sm-3 mb-4">
+                                    @localizer["Name"]
+                                </dt>
+                                <dd class="col-sm-9">
+                                    @Html.DisplayFor(model => model.Name)
+                                </dd>
+                                <dt class="col-sm-3 mb-4">
+                                    @localizer["Address"]
+                                </dt>
+                                <dd class="col-sm-9">
+                                    @Html.DisplayFor(model => model.Address)
+                                </dd>
+                                <dt class="col-sm-3 mb-4">
+                                    @localizer["CompanyName"]
+                                </dt>
+                                <dd class="col-sm-9">
+                                    @Html.DisplayFor(model => model.CompanyName)
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="card-footer" style="margin-top:-50px">
+                            <a href="@Url.Action("Update", new { branchId = Model.Id })" class="btn btn-primary">
+                                @localizer["Update"]
+                            </a>
+                            <a asp-action="Index" class="btn btn-secondary">
+                                @localizer["BackToList"]
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

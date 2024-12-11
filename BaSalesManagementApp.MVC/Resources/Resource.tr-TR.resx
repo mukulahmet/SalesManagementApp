@@ -1,0 +1,1857 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Product_Name" xml:space="preserve">
+    <value>Ürün Adı</value>
+  </data>
+  <data name="AboutUs" xml:space="preserve">
+    <value>Hakkımızda</value>
+  </data>
+  <data name="AccessDeniedMessage" xml:space="preserve">
+    <value>Bu sayfaya erişim yetkiniz bulunmamaktadır.</value>
+  </data>
+  <data name="AccessDeniedTitle" xml:space="preserve">
+    <value>Erişim Engellendi</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Hareketler</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Aktif</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Ekle</value>
+  </data>
+  <data name="Added_By" xml:space="preserve">
+    <value>Tarafından Eklendi</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Yönetici</value>
+  </data>
+  <data name="Admin_Index" xml:space="preserve">
+    <value>Yönetici Listesi</value>
+  </data>
+  <data name="AdminName" xml:space="preserve">
+    <value>Yönetici Adı</value>
+  </data>
+  <data name="Admins" xml:space="preserve">
+    <value>Yöneticiler</value>
+  </data>
+  <data name="Age" xml:space="preserve">
+    <value>Yaş</value>
+  </data>
+  <data name="Analytics" xml:space="preserve">
+    <value>Analitik</value>
+  </data>
+  <data name="BackToList" xml:space="preserve">
+    <value>Listeye Geri Dön</value>
+  </data>
+  <data name="BackToPreviousPage" xml:space="preserve">
+    <value>Bir önceki sayfaya dönmek için tıklayınız</value>
+  </data>
+  <data name="Basic" xml:space="preserve">
+    <value>Temel</value>
+  </data>
+  <data name="BilgeAdamAcademy" xml:space="preserve">
+    <value>Bilge Adam Akademi</value>
+  </data>
+  <data name="BilgeAdamTechnology" xml:space="preserve">
+    <value>Bilge Adam Teknoloji</value>
+  </data>
+  <data name="Branch" xml:space="preserve">
+    <value>Şube</value>
+  </data>
+  <data name="Branch_Details" xml:space="preserve">
+    <value>Şube Detayları</value>
+  </data>
+  <data name="BranchIndex" xml:space="preserve">
+    <value>Şube Listesi</value>
+  </data>
+  <data name="BranchName" xml:space="preserve">
+    <value>Şube Adı</value>
+  </data>
+  <data name="building_Web_apps_with_ASP.NET_Core" xml:space="preserve">
+    <value>ASP.NET Core ile Web uygulamaları oluşturma</value>
+  </data>
+  <data name="CANCEL_ADMIN" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="CANCEL_BRANCH" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="CANCEL_CATEGORY" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="CANCEL_CITY" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="CANCEL_COMPANY" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="CANCEL_COUNTRY" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="CANCEL_CUSTOMER" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="CANCEL_EMPLOYEE" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="CANCEL_ORDER" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="CANCEL_PRODUCT" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="CANCEL_PRODUCT_TYPE" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="CANCEL_PROMOTION" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="CANCEL_STOCK" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="CANCEL_STOCK_TYPE_SIZE" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="CANCEL_WAREHOUSE" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="CategoryDetails" xml:space="preserve">
+    <value>Kategori Detayları</value>
+  </data>
+  <data name="CategoryIndex" xml:space="preserve">
+    <value>Kategori Listesi</value>
+  </data>
+  <data name="CategoryName" xml:space="preserve">
+    <value>Kategori Adı</value>
+  </data>
+  <data name="Change_Your_Password" xml:space="preserve">
+    <value>Şifrenizi Değiştirin</value>
+  </data>
+  <data name="ChangeMyPassword" xml:space="preserve">
+    <value>Şifremi Değiştir</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Şifre Değiştir</value>
+  </data>
+  <data name="ChangePasswordButton" xml:space="preserve">
+    <value>Şifre Değiştir</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Şehir</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Kapat</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Şirket</value>
+  </data>
+  <data name="CompanyAdress" xml:space="preserve">
+    <value>Şirket Adresi</value>
+  </data>
+  <data name="CompanyDetails" xml:space="preserve">
+    <value>Şirket Detayları</value>
+  </data>
+  <data name="CompanyIndex" xml:space="preserve">
+    <value>Şirket Listesi</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>Şirket Adı</value>
+  </data>
+  <data name="CompanyPhone" xml:space="preserve">
+    <value>Şirket Telefonu</value>
+  </data>
+  <data name="ConfirmNewPassword" xml:space="preserve">
+    <value>Yeni Şifreyi Onayla</value>
+  </data>
+  <data name="ConfirmNewPasswordPlaceholder" xml:space="preserve">
+    <value>Yeni şifrenizi onaylayın</value>
+  </data>
+  <data name="ContactAdmin" xml:space="preserve">
+    <value>Lütfen gerekli izinler için sistem yöneticisi ile iletişime geçin.</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>Miktar</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Ülke</value>
+  </data>
+  <data name="CountryDetails" xml:space="preserve">
+    <value>Ülke Detayları</value>
+  </data>
+  <data name="CountryIndex" xml:space="preserve">
+    <value>Ülke Listesi</value>
+  </data>
+  <data name="CountryName" xml:space="preserve">
+    <value>Ülke Adı</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Oluştur</value>
+  </data>
+  <data name="Create_Employee" xml:space="preserve">
+    <value>Çalışan Oluştur</value>
+  </data>
+  <data name="Create_New" xml:space="preserve">
+    <value>Yeni Oluştur</value>
+  </data>
+  <data name="CreateAdmin" xml:space="preserve">
+    <value>Yönetici Oluştur</value>
+  </data>
+  <data name="CreatedDate" xml:space="preserve">
+    <value>Oluşturulma Tarihi</value>
+  </data>
+  <data name="CurrentPassword" xml:space="preserve">
+    <value>Mevcut Şifre</value>
+  </data>
+  <data name="CurrentPasswordPlaceholder" xml:space="preserve">
+    <value>Mevcut Şifrenizi Girin</value>
+  </data>
+  <data name="Customer" xml:space="preserve">
+    <value>Müşteri</value>
+  </data>
+  <data name="CustormerDetails" xml:space="preserve">
+    <value>Müşteri Detayları</value>
+  </data>
+  <data name="CustormerIndex" xml:space="preserve">
+    <value>Müşteri Listesi</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Gösterge Paneli</value>
+  </data>
+  <data name="Dashboards" xml:space="preserve">
+    <value>Gösterge Tabloları</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Tarih</value>
+  </data>
+  <data name="Default_Profile_Photo" xml:space="preserve">
+    <value>Varsayılan Profil Fotoğrafı</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="DELETE_ADMIN" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="DELETE_BRANCH" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="DELETE_CATEGORY" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="DELETE_CITY" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="DELETE_COMPANY" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="DELETE_CONFIRM_ADMIN" xml:space="preserve">
+    <value>Bu admini silmek istediğinizden emin misiniz?</value>
+  </data>
+  <data name="DELETE_CONFIRM_BRANCH" xml:space="preserve">
+    <value>Bu şubeyi silmek istediğinizden emin misiniz?</value>
+  </data>
+  <data name="DELETE_CONFIRM_CATEGORY" xml:space="preserve">
+    <value>Bu kategoriyi silmek istediğinizden emin misiniz?</value>
+  </data>
+  <data name="DELETE_CONFIRM_CITY" xml:space="preserve">
+    <value>Bu şehri silmek istediğinizden emin misiniz?</value>
+  </data>
+  <data name="DELETE_CONFIRM_COMPANY" xml:space="preserve">
+    <value>Bu şirketi silmek istediğinizden emin misiniz?</value>
+  </data>
+  <data name="DELETE_CONFIRM_COUNTRY" xml:space="preserve">
+    <value>Bu ülkeyi silmek istediğinizden emin misiniz?</value>
+  </data>
+  <data name="DELETE_CONFIRM_CUSTOMER" xml:space="preserve">
+    <value>Bu müşteriyi silmek istediğinizden emin misiniz?</value>
+  </data>
+  <data name="DELETE_CONFIRM_EMPLOYEE" xml:space="preserve">
+    <value>Bu çalışanı silmek istediğinizden emin misiniz?</value>
+  </data>
+  <data name="DELETE_CONFIRM_ORDER" xml:space="preserve">
+    <value>Bu siparişi silmek istediğinizden emin misiniz?</value>
+  </data>
+  <data name="DELETE_CONFIRM_PRODUCT" xml:space="preserve">
+    <value>Bu ürünü silmek istediğinizden emin misiniz?</value>
+  </data>
+  <data name="DELETE_CONFIRM_PRODUCT_TYPE" xml:space="preserve">
+    <value>Bu ürün türünü silmek istediğinizden emin misiniz?</value>
+  </data>
+  <data name="DELETE_CONFIRM_PROMOTION" xml:space="preserve">
+    <value>Bu promosyonu silmek istediğinizden emin misiniz?</value>
+  </data>
+  <data name="DELETE_CONFIRM_STOCK" xml:space="preserve">
+    <value>Bu stoğu silmek istediğinizden emin misiniz?</value>
+  </data>
+  <data name="DELETE_CONFIRM_STOCK_TYPE_SIZE" xml:space="preserve">
+    <value>Bu stok türünün boyutunu silmek istediğinizden emin misiniz?</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_ADMIN" xml:space="preserve">
+    <value>Admini Sil</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_BRANCH" xml:space="preserve">
+    <value>Şubeyi Sil</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_CATEGORY" xml:space="preserve">
+    <value>Kategoriyi Sil</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_CITY" xml:space="preserve">
+    <value>Şehri Sil</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_COMPANY" xml:space="preserve">
+    <value>Şirketi Sil</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_COUNTRY" xml:space="preserve">
+    <value>Ülkeyi Sil</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_CUSTOMER" xml:space="preserve">
+    <value>Müşteriyi Sil</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_EMPLOYEE" xml:space="preserve">
+    <value>Çalışanı Sil</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_ORDER" xml:space="preserve">
+    <value>Siparişi Sil</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_PRODUCT" xml:space="preserve">
+    <value>Ürünü Sil</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_PRODUCT_TYPE" xml:space="preserve">
+    <value>Ürün Türünü Sil</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_PROMOTION" xml:space="preserve">
+    <value>Promosyonu Sil</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_STOCK" xml:space="preserve">
+    <value>Stoğu Sil</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_STOCK_TYPE_SIZE" xml:space="preserve">
+    <value>Stok türü Boyutunu Sil</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_WAREHOUSE" xml:space="preserve">
+    <value>Depoyu Sil</value>
+  </data>
+  <data name="DELETE_CONFIRM_WAREHOUSE" xml:space="preserve">
+    <value>Bu depoyu silmek istediğinizden emin misiniz?</value>
+  </data>
+  <data name="DELETE_COUNTRY" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="DELETE_CUSTOMER" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="DELETE_EMPLOYEE" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="DELETE_ORDER" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="DELETE_PRODUCT" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="DELETE_PRODUCT_TYPE" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="DELETE_PROMOTION" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="DELETE_STOCK" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="DELETE_STOCK_TYPE_SIZE" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="DELETE_WAREHOUSE" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Açıklama</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Detaylar</value>
+  </data>
+  <data name="disabledselected" xml:space="preserve">
+    <value>Devre Dışı Seçildi</value>
+  </data>
+  <data name="Discount" xml:space="preserve">
+    <value>İndirim</value>
+  </data>
+  <data name="Edit_Profile" xml:space="preserve">
+    <value>Profili Güncelle</value>
+  </data>
+  <data name="EducationSolutions" xml:space="preserve">
+    <value>Eğitim Çözümleri</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Mail Adresi</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>Çalışan</value>
+  </data>
+  <data name="EmployeeDetails" xml:space="preserve">
+    <value>Çalışan Detayları</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>Bitiş Tarihi</value>
+  </data>
+  <data name="Enter_your_Email" xml:space="preserve">
+    <value>Mail Adresinizi Giriniz</value>
+  </data>
+  <data name="Error_Page" xml:space="preserve">
+    <value>Hata Sayfası</value>
+  </data>
+  <data name="First" xml:space="preserve">
+    <value>Birinci</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>Adı</value>
+  </data>
+  <data name="HomePage" xml:space="preserve">
+    <value>Anasayfa</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>Kimlik</value>
+  </data>
+  <data name="Index" xml:space="preserve">
+    <value>Liste</value>
+  </data>
+  <data name="IsActive" xml:space="preserve">
+    <value>Aktif</value>
+  </data>
+  <data name="Languages" xml:space="preserve">
+    <value>Diller</value>
+  </data>
+  <data name="Last" xml:space="preserve">
+    <value>Sonuncu</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Soyadı</value>
+  </data>
+  <data name="Learn_About" xml:space="preserve">
+    <value>Hakkında bilgi al</value>
+  </data>
+  <data name="License" xml:space="preserve">
+    <value>Lisans</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>Liste</value>
+  </data>
+  <data name="Log_Out" xml:space="preserve">
+    <value>Çıkış</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Giriş</value>
+  </data>
+  <data name="made_with" xml:space="preserve">
+    <value>Yılında Yapılmıştır</value>
+  </data>
+  <data name="Management" xml:space="preserve">
+    <value>Yönetimi</value>
+  </data>
+  <data name="My_Profile" xml:space="preserve">
+    <value>Profilim</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Müşteri Adı</value>
+  </data>
+  <data name="Newest_First" xml:space="preserve">
+    <value>En Yeniler Önce</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>Yeni Şifre</value>
+  </data>
+  <data name="NewPasswordPlaceholder" xml:space="preserve">
+    <value>Yeni Şifrenizi Girin</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Sonraki</value>
+  </data>
+  <data name="NoCompanyFound" xml:space="preserve">
+    <value>Ülke Bulunamadı</value>
+  </data>
+  <data name="NoProductsAvailable" xml:space="preserve">
+    <value>Mevcut Ürün Yok</value>
+  </data>
+  <data name="Oldest_First" xml:space="preserve">
+    <value>En Eskiler Önce</value>
+  </data>
+  <data name="Operations" xml:space="preserve">
+    <value>İşlemler</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>Sipariş</value>
+  </data>
+  <data name="OrderDate" xml:space="preserve">
+    <value>Şipariş Tarihi</value>
+  </data>
+  <data name="OrderDetails" xml:space="preserve">
+    <value>Sipariş Detayları</value>
+  </data>
+  <data name="OrderIndex" xml:space="preserve">
+    <value>Şipariş Listesi</value>
+  </data>
+  <data name="PAGES" xml:space="preserve">
+    <value>SAYFALAR</value>
+  </data>
+  <data name="Pagess" xml:space="preserve">
+    <value>Sayfalar</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Şifre</value>
+  </data>
+  <data name="PasswordRequirementLength" xml:space="preserve">
+    <value>En az 8 karakter </value>
+  </data>
+  <data name="PasswordRequirementNumber" xml:space="preserve">
+    <value>En az bir sayı</value>
+  </data>
+  <data name="PasswordRequirementSpecial" xml:space="preserve">
+    <value>En az bir özel karakter</value>
+  </data>
+  <data name="PasswordRequirementUppercase" xml:space="preserve">
+    <value>En az bir büyük harf</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="Photo" xml:space="preserve">
+    <value>Fotoğraf</value>
+  </data>
+  <data name="PleaseChooseCompanyFirst" xml:space="preserve">
+    <value>Lütfen Önce Şirketi Seçin</value>
+  </data>
+  <data name="Population" xml:space="preserve">
+    <value>Popülasyon</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Öncesi</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Fiyat</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>Gizlilik Politikası</value>
+  </data>
+  <data name="Pro" xml:space="preserve">
+    <value>Profesyonel</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Ürün</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>Ürün Adı</value>
+  </data>
+  <data name="ProductType" xml:space="preserve">
+    <value>Ürün Tipi</value>
+  </data>
+  <data name="ProductTypeDetails" xml:space="preserve">
+    <value>Ürün Tipi Detayları</value>
+  </data>
+  <data name="ProductTypeList" xml:space="preserve">
+    <value>Ürün Tipi Listesi</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="Profile_Photo" xml:space="preserve">
+    <value>Profil Fotoğrafı</value>
+  </data>
+  <data name="Promotion" xml:space="preserve">
+    <value>Promosyon</value>
+  </data>
+  <data name="Promotion_Index" xml:space="preserve">
+    <value>Promosyon Listesi</value>
+  </data>
+  <data name="PromotionDetails" xml:space="preserve">
+    <value>Promosyon Detayları</value>
+  </data>
+  <data name="QRCode" xml:space="preserve">
+    <value>QR Kod</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Miktar</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Rol</value>
+  </data>
+  <data name="Sales" xml:space="preserve">
+    <value>Satış</value>
+  </data>
+  <data name="Sales_Management" xml:space="preserve">
+    <value>Satış Yönetimi</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Kaydet</value>
+  </data>
+  <data name="Search..." xml:space="preserve">
+    <value>Ara...</value>
+  </data>
+  <data name="Select_a_Product" xml:space="preserve">
+    <value>Bir Urun Seciniz</value>
+  </data>
+  <data name="Select_Company" xml:space="preserve">
+    <value>Sirket Seciniz</value>
+  </data>
+  <data name="SelectBranch" xml:space="preserve">
+    <value>Şube Seç</value>
+  </data>
+  <data name="SelectCompany" xml:space="preserve">
+    <value>Şirket Seçiniz</value>
+  </data>
+  <data name="SelectCountry" xml:space="preserve">
+    <value>Ülke Seç</value>
+  </data>
+  <data name="Server_Error_(500)" xml:space="preserve">
+    <value>Sunucu Hatası (500)</value>
+  </data>
+  <data name="ServerErrorMessage" xml:space="preserve">
+    <value>Bir Hata Oluştu</value>
+  </data>
+  <data name="Sign_in" xml:space="preserve">
+    <value>Oturum Açın</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Boyut</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Başlangıç Tarihi</value>
+  </data>
+  <data name="Stock" xml:space="preserve">
+    <value>Stok</value>
+  </data>
+  <data name="Stock_Index" xml:space="preserve">
+    <value>Stok Listesi</value>
+  </data>
+  <data name="StockTypeSize" xml:space="preserve">
+    <value>Stok Birim Miktarı</value>
+  </data>
+  <data name="StockTypeSize_Index" xml:space="preserve">
+    <value>Stok Tipi Boyutu Listesi</value>
+  </data>
+  <data name="StudentCreateVM" xml:space="preserve">
+    <value>ÖgrenciVM Oluştur</value>
+  </data>
+  <data name="Support" xml:space="preserve">
+    <value>Destek</value>
+  </data>
+  <data name="Template" xml:space="preserve">
+    <value>Şablon</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Ünvan</value>
+  </data>
+  <data name="TotalPrice" xml:space="preserve">
+    <value>Toplam Fiyat</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Güncelle</value>
+  </data>
+  <data name="Use_this_ page_to_detail_your_site's_privacy_policy." xml:space="preserve">
+    <value>Sitenizin gizlilik politikasının ayrıntılarını öğrenmek için bu sayfayı kullanın.</value>
+  </data>
+  <data name="User_Photo" xml:space="preserve">
+    <value>Kullanıcı Fotoğrafı</value>
+  </data>
+  <data name="Warehouse" xml:space="preserve">
+    <value>Depo</value>
+  </data>
+  <data name="Warehouse_Index" xml:space="preserve">
+    <value>Depo Listesi</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Hoşgeldiniz</value>
+  </data>
+  <data name="Welcome_to_Sales_Management" xml:space="preserve">
+    <value>Satış Yönetimine Hoşgeldiniz</value>
+  </data>
+  <data name="WelcomeMessage" xml:space="preserve">
+    <value>Satış Yönetimi'ne Hoş Geldiniz</value>
+  </data>
+  <data name="ORDER_CREATED_SUCCESS" xml:space="preserve">
+    <value>Sipariş başarıyla oluşturuldu.</value>
+  </data>
+  <data name="ORDER_CREATE_FAILED" xml:space="preserve">
+    <value>Sipariş oluşturulurken bir hata meydana geldi.</value>
+  </data>
+  <data name="ORDER_DATE_VALIDATION" xml:space="preserve">
+    <value>Tarih bugünden daha önce olamaz.</value>
+  </data>
+  <data name="ORDER_DELETED_SUCCESS" xml:space="preserve">
+    <value>Sipariş başarıyla silindi.</value>
+  </data>
+  <data name="ORDER_DELETE_FAILED" xml:space="preserve">
+    <value>Sipariş silinirken bir hata meydana geldi.</value>
+  </data>
+  <data name="ORDER_EMPTY_VALIDATION" xml:space="preserve">
+    <value>Bu alan boş olamaz.</value>
+  </data>
+  <data name="ORDER_FOUND_SUCCESS" xml:space="preserve">
+    <value>Sipariş başarıyla bulundu.</value>
+  </data>
+  <data name="ORDER_GET_FAILED" xml:space="preserve">
+    <value>Sipariş verilerini alırken bir hata meydana geldi.</value>
+  </data>
+  <data name="ORDER_LISTED_SUCCESS" xml:space="preserve">
+    <value>Siparişler başarıyla listelendi.</value>
+  </data>
+  <data name="ORDER_LIST_EMPTY" xml:space="preserve">
+    <value>Sipariş listesi boş.</value>
+  </data>
+  <data name="ORDER_LIST_FAILED" xml:space="preserve">
+    <value>Siparişleri listelerken bir hata meydana geldi.</value>
+  </data>
+  <data name="ORDER_NOT_FOUND" xml:space="preserve">
+    <value>Sipariş bulunamadı.</value>
+  </data>
+  <data name="ORDER_PRECISION_VALIDATION" xml:space="preserve">
+    <value>Toplam fiyat en fazla 18 haneli ve 2 ondalık basamaklı olabilir.</value>
+  </data>
+  <data name="ORDER_QUANTITY_VALIDATION" xml:space="preserve">
+    <value>Sipariş miktarı en az 1 olmalıdır.</value>
+  </data>
+  <data name="ORDER_TOTALPRICE_VALIDATION" xml:space="preserve">
+    <value>Toplam fiyat sıfırdan büyük olmalıdır.</value>
+  </data>
+  <data name="ORDER_UPDATE_FAILED" xml:space="preserve">
+    <value>Sipariş güncelleme başarısız.</value>
+  </data>
+  <data name="ORDER_UPDATE_SUCCES" xml:space="preserve">
+    <value>Sipariş güncelleme başarılı.</value>
+  </data>
+  <data name="ORDER_WHOLE_NUMBER_VALIDATION" xml:space="preserve">
+    <value>Miktar tam sayı olmalıdır.</value>
+  </data>
+  <data name="COMPANY_ADDRESS_MAXIMUM_LENGTH" xml:space="preserve">
+    <value>Firma adresine 128 karakterden fazla girilemez</value>
+  </data>
+  <data name="COMPANY_ADDRESS_MINIMUM_LENGTH" xml:space="preserve">
+    <value>Firma adresine en az 2 karakter girilmeli</value>
+  </data>
+  <data name="COMPANY_ADDRESS_NOT_EMPTY" xml:space="preserve">
+    <value>Firma Adresi Boş Bırakılamaz.</value>
+  </data>
+  <data name="COMPANY_ADD_ERROR" xml:space="preserve">
+    <value>Firma Ekleme Başarısız.</value>
+  </data>
+  <data name="COMPANY_ADD_SUCCESS" xml:space="preserve">
+    <value>Firma Ekleme Başarılı.</value>
+  </data>
+  <data name="COMPANY_DELETE_ERROR" xml:space="preserve">
+    <value>Firma Silme Başarısız.</value>
+  </data>
+  <data name="COMPANY_DELETE_SUCCESS" xml:space="preserve">
+    <value>Firma Silme Başarılı.</value>
+  </data>
+  <data name="COMPANY_GETBYID_ERROR" xml:space="preserve">
+    <value>Firma Getirme Başarısız.</value>
+  </data>
+  <data name="COMPANY_GETBYID_SUCCESS" xml:space="preserve">
+    <value>Firma Getirme Başarılı.</value>
+  </data>
+  <data name="COMPANY_LISTED_ERROR" xml:space="preserve">
+    <value>Firma Listeleme Başarısız.</value>
+  </data>
+  <data name="COMPANY_LISTED_NOTFOUND" xml:space="preserve">
+    <value>Firma Bulunamadı.</value>
+  </data>
+  <data name="COMPANY_LISTED_SUCCESS" xml:space="preserve">
+    <value>Firma Listeleme Başarılı.</value>
+  </data>
+  <data name="COMPANY_MATCHES" xml:space="preserve">
+    <value>Geçersiz firma telefonu</value>
+  </data>
+  <data name="COMPANY_NAME_MAXIMUM_LENGTH" xml:space="preserve">
+    <value>Firma adına 128 karakterden fazla girilemez</value>
+  </data>
+  <data name="COMPANY_NAME_MINIMUM_LENGTH" xml:space="preserve">
+    <value>Firma adına en az 2 karakter girilmeli</value>
+  </data>
+  <data name="COMPANY_NAME_NOT_EMPTY" xml:space="preserve">
+    <value>Firma Adı Boş Bırakılamaz.</value>
+  </data>
+  <data name="COMPANY_PHONE_MAXIMUM_LENGTH" xml:space="preserve">
+    <value>Firma telefonuna 40 rakamdan fazla girilemez</value>
+  </data>
+  <data name="COMPANY_PHONE_MINIMUM_LENGTH" xml:space="preserve">
+    <value>Firma telefonuna en az 10 rakam girilmeli</value>
+  </data>
+  <data name="COMPANY_PHONE_NOT_EMPTY" xml:space="preserve">
+    <value>Firma Telefonu Boş Bırakılamaz.</value>
+  </data>
+  <data name="COMPANY_UPDATE_ERROR" xml:space="preserve">
+    <value>Firma Güncelleme Başarısız.</value>
+  </data>
+  <data name="COMPANY_UPDATE_SUCCESS" xml:space="preserve">
+    <value>Firma Güncelleme Başarılı.</value>
+  </data>
+  <data name="ACCOUNT_NOT_FOUND" xml:space="preserve">
+    <value>Email adresi ya da şifre hatalı </value>
+  </data>
+  <data name="ACCOUNT_ROLE_NOT_FOUND_FOR_USER" xml:space="preserve">
+    <value>Kullanıcı için rol bulunamadı </value>
+  </data>
+  <data name="PLEASE_ENTER_YOUR_EMAIL" xml:space="preserve">
+    <value>Lütfen email adresinizi giriniz </value>
+  </data>
+  <data name="PLEASE_ENTER_YOUR_EMAIL_WITH_CORRECT_FORMAT" xml:space="preserve">
+    <value>Lütfen mail adresinizi doğru formatta giriniz </value>
+  </data>
+  <data name="PLEASE_ENTER_YOUR_PASSWORD" xml:space="preserve">
+    <value>Lütfen şifrenizi giriniz </value>
+  </data>
+  <data name="CUSTOMER_ADD_ERROR" xml:space="preserve">
+    <value>Müşteri Ekleme Başarısız.</value>
+  </data>
+  <data name="CUSTOMER_ADD_SUCCESS" xml:space="preserve">
+    <value>Müşteri Ekleme Başarılı.</value>
+  </data>
+  <data name="CUSTOMER_DELETE_ERROR" xml:space="preserve">
+    <value>Müşteri Silme Başarısız.</value>
+  </data>
+  <data name="CUSTOMER_DELETE_SUCCESS" xml:space="preserve">
+    <value>Müşteri Silme Başarılı.</value>
+  </data>
+  <data name="CUSTOMER_FOUND_SUCCESS" xml:space="preserve">
+    <value>Aranan Müşteri Bulundu.</value>
+  </data>
+  <data name="CUSTOMER_GET_FAILED" xml:space="preserve">
+    <value>Müşteri Çekme Başarısız.</value>
+  </data>
+  <data name="CUSTOMER_LISTED_ERROR" xml:space="preserve">
+    <value>Müşteri Listeleme Başarısız.</value>
+  </data>
+  <data name="CUSTOMER_LISTED_SUCCESS" xml:space="preserve">
+    <value>Müşteri Listeleme Başarılı.</value>
+  </data>
+  <data name="CUSTOMER_LIST_EMPTY" xml:space="preserve">
+    <value>Müşteri Listesi Boş.</value>
+  </data>
+  <data name="CUSTOMER_LIST_FAILED" xml:space="preserve">
+    <value>Müşteri Listeleme Başarısız.</value>
+  </data>
+  <data name="CUSTOMER_NOT_FOUND" xml:space="preserve">
+    <value>Müşteri Bulunamadı.</value>
+  </data>
+  <data name="CUSTOMER_UPDATED_FAILED" xml:space="preserve">
+    <value>Müşteri Güncelleme Başarısız.</value>
+  </data>
+  <data name="CUSTOMER_UPDATED_SUCCESS" xml:space="preserve">
+    <value>Müşteri Güncelleme Başarılı.</value>
+  </data>
+  <data name="STOCK_CREATED_SUCCESS" xml:space="preserve">
+    <value>Stok başarıyla oluşturuldu.</value>
+  </data>
+  <data name="STOCK_CREATE_FAILED" xml:space="preserve">
+    <value>Stok oluşturulurken bir hata meydana geldi.</value>
+  </data>
+  <data name="STOCK_DELETED_SUCCESS" xml:space="preserve">
+    <value>Stok başarıyla silindi.</value>
+  </data>
+  <data name="STOCK_DELETE_FAILED" xml:space="preserve">
+    <value>Stok silinirken bir hata meydana geldi.</value>
+  </data>
+  <data name="STOCK_EMPTY_VALIDATION" xml:space="preserve">
+    <value>Bu alan boş bırakılamaz.</value>
+  </data>
+  <data name="STOCK_FOUND_SUCCESS" xml:space="preserve">
+    <value>Stok başarıyla bulundu.</value>
+  </data>
+  <data name="STOCK_GET_FAILED" xml:space="preserve">
+    <value>Stok verilerini alırken bir hata meydana geldi.</value>
+  </data>
+  <data name="STOCK_LISTED_SUCCESS" xml:space="preserve">
+    <value>Stoklar başarıyla listelendi.</value>
+  </data>
+  <data name="STOCK_LIST_EMPTY" xml:space="preserve">
+    <value>Stok listesi boş.</value>
+  </data>
+  <data name="STOCK_LIST_FAILED" xml:space="preserve">
+    <value>Stokları listelerken bir hata meydana geldi.</value>
+  </data>
+  <data name="STOCK_NOT_FOUND" xml:space="preserve">
+    <value>Stok bulunamadı.</value>
+  </data>
+  <data name="STOCK_POSITIVE_VALIDATION" xml:space="preserve">
+    <value>Stok miktarı sıfırdan küçük olamaz.</value>
+  </data>
+  <data name="STOCK_UPDATE_FAILED" xml:space="preserve">
+    <value>Stok Güncelleme Başarısız.</value>
+  </data>
+  <data name="STOCK_UPDATE_SUCCESS" xml:space="preserve">
+    <value>Stok Güncelleme Başarılı.</value>
+  </data>
+  <data name="STOCK_WHOLENUMBER_VALIDATION" xml:space="preserve">
+    <value>Stok miktarı tam sayı olmalıdır.</value>
+  </data>
+  <data name="EMPLOYEE_ADD_ERROR" xml:space="preserve">
+    <value>Çalışan ekleme sırasında bir hata oluştu.</value>
+  </data>
+  <data name="EMPLOYEE_ADD_SUCCESS" xml:space="preserve">
+    <value>Çalışan başarıyla eklendi.</value>
+  </data>
+  <data name="EMPLOYEE_DELETE_ERROR" xml:space="preserve">
+    <value>Çalışan silme sırasında bir hata oluştu.</value>
+  </data>
+  <data name="EMPLOYEE_DELETE_SUCCESS" xml:space="preserve">
+    <value>Çalışan başarıyla silindi.</value>
+  </data>
+  <data name="EMPLOYEE_EMAIL_IN_USE" xml:space="preserve">
+    <value>Bu e-posta adresi zaten kullanılıyor.</value>
+  </data>
+  <data name="EMPLOYEE_E_MAIL_FIELD_IS_REQUIRED" xml:space="preserve">
+    <value>E-posta alanı zorunludur.</value>
+  </data>
+  <data name="EMPLOYEE_GETBYID_ERROR" xml:space="preserve">
+    <value>Çalışan bulunamadı.</value>
+  </data>
+  <data name="EMPLOYEE_LISTED_ERROR" xml:space="preserve">
+    <value>Çalışan listeleme sırasında bir hata oluştu.</value>
+  </data>
+  <data name="EMPLOYEE_LISTED_NOTFOUND" xml:space="preserve">
+    <value>Hiçbir çalışan bulunamadı.</value>
+  </data>
+  <data name="EMPLOYEE_LISTED_SUCCESS" xml:space="preserve">
+    <value>Çalışanlar başarıyla listelendi.</value>
+  </data>
+  <data name="EMPLOYEE_NAMESPACE_IS_REQUIRED" xml:space="preserve">
+    <value>Ad alanı zorunludur.</value>
+  </data>
+  <data name="EMPLOYEE_NAME_MAX_LENGTH_ERROR" xml:space="preserve">
+    <value>İsim 50 karakterden uzun olamaz.</value>
+  </data>
+  <data name="EMPLOYEE_NAME_MIN_LENGTH_ERROR" xml:space="preserve">
+    <value>İsim 2 karakterden az olamaz.</value>
+  </data>
+  <data name="EMPLOYEE_NAME_NUMERIC_FORBIDDEN" xml:space="preserve">
+    <value>İsimde sayısal karakter kullanılamaz.</value>
+  </data>
+  <data name="EMPLOYEE_PHOTO_SIZE_EXCEEDS_LIMIT" xml:space="preserve">
+    <value>Fotoğraf boyutu 500 KB'dan fazla olamaz.</value>
+  </data>
+  <data name="EMPLOYEE_SURNAME_FIELD_IS_REQUIRED" xml:space="preserve">
+    <value>Soyad alanı zorunludur.</value>
+  </data>
+  <data name="EMPLOYEE_SURNAME_MAX_LENGTH_ERROR" xml:space="preserve">
+    <value>Soyisim 50 karakterden uzun olamaz.</value>
+  </data>
+  <data name="EMPLOYEE_SURNAME_MIN_LENGTH_ERROR" xml:space="preserve">
+    <value>Soyisim 2 karakterden az olamaz.</value>
+  </data>
+  <data name="EMPLOYEE_SURNAME_NUMERIC_FORBIDDEN" xml:space="preserve">
+    <value>Soyisimde sayısal karakter kullanılamaz.</value>
+  </data>
+  <data name="EMPLOYEE_UPDATE_ERROR" xml:space="preserve">
+    <value>Çalışan güncelleme sırasında bir hata oluştu.</value>
+  </data>
+  <data name="EMPLOYEE_UPDATE_SUCCESS" xml:space="preserve">
+    <value>Çalışan başarıyla güncellendi.</value>
+  </data>
+  <data name="EMPLOYEE_VALID_EMAIL_REQUIRED" xml:space="preserve">
+    <value>Geçersiz Email girdiniz. Örn: (orn@alanadı.com)</value>
+  </data>
+  <data name="PROMOTION_CREATE_ERROR" xml:space="preserve">
+    <value>Promosyon oluştururken bir hata meydana geldi.</value>
+  </data>
+  <data name="PROMOTION_CREATE_SUCCESS" xml:space="preserve">
+    <value>Promosyon başarıyla oluşturuldu.</value>
+  </data>
+  <data name="PROMOTION_DELETE_ERROR" xml:space="preserve">
+    <value>Promosyon Silme Başarısız.</value>
+  </data>
+  <data name="PROMOTION_DELETE_SUCCESS" xml:space="preserve">
+    <value>Promosyon Başarıyla Silindi.</value>
+  </data>
+  <data name="PROMOTION_DISCOUNT_GREATER_THAN_ZERO" xml:space="preserve">
+    <value>Promosyon indirimi sıfırdan büyük olmalıdır.</value>
+  </data>
+  <data name="PROMOTION_DISCOUNT_LESS_THAN_HUNDRED" xml:space="preserve">
+    <value>Promosyon indirimi 100'den küçük olmalıdır.</value>
+  </data>
+  <data name="PROMOTION_DISCOUNT_REQUIRED" xml:space="preserve">
+    <value>Promosyon indirimi zorunludur.</value>
+  </data>
+  <data name="PROMOTION_GETBYID_ERROR" xml:space="preserve">
+    <value>Promosyon Getirme Başarısız.</value>
+  </data>
+  <data name="PROMOTION_GETBYID_SUCCESS" xml:space="preserve">
+    <value>Promosyon Getirme Başarılı.</value>
+  </data>
+  <data name="PROMOTION_LISTED_ERROR" xml:space="preserve">
+    <value>Promosyon Listeleme Başarısız.</value>
+  </data>
+  <data name="PROMOTION_LISTED_NOTFOUND" xml:space="preserve">
+    <value>Görüntülenecek bir promosyon bulunmuyor.</value>
+  </data>
+  <data name="PROMOTION_LISTED_SUCCESS" xml:space="preserve">
+    <value>Promosyon Listeleme Başarılı.</value>
+  </data>
+  <data name="PROMOTION_NOT_FOUND" xml:space="preserve">
+    <value>Promosyon Bulunamadı.</value>
+  </data>
+  <data name="PROMOTION_PRICE_GREATER_THAN_ZERO" xml:space="preserve">
+    <value>Promosyon fiyatı sıfırdan büyük olmalıdır.</value>
+  </data>
+  <data name="PROMOTION_PRICE_REQUIRED" xml:space="preserve">
+    <value>Promosyon fiyatı zorunludur.</value>
+  </data>
+  <data name="PROMOTION_TOTAL_PRICE_GREATER_THAN_OR_EQUAL_PRICE" xml:space="preserve">
+    <value>Promosyon Toplam fiyatı , fiyattan büyük veya eşit olmalıdır.</value>
+  </data>
+  <data name="PROMOTION_TOTAL_PRICE_GREATER_THAN_ZERO" xml:space="preserve">
+    <value>Promosyon Toplam fiyatı sıfırdan büyük olmalıdır.</value>
+  </data>
+  <data name="PROMOTION_TOTAL_PRICE_REQUIRED" xml:space="preserve">
+    <value>Promosyon Toplam fiyatı zorunludur.</value>
+  </data>
+  <data name="PROMOTION_UPDATE_ERROR" xml:space="preserve">
+    <value>Promosyon Güncelleme Başarısız.</value>
+  </data>
+  <data name="PROMOTION_UPDATE_SUCCESS" xml:space="preserve">
+    <value>Promosyon Güncelleme Başarılı.</value>
+  </data>
+  <data name="STUDENT_ADDED_SUCCESS" xml:space="preserve">
+    <value>Öğrenci Ekleme Başarılı.</value>
+  </data>
+  <data name="STUDENT_BROUGHT_SUCCESS" xml:space="preserve">
+    <value>Öğrenci Getirme Başarılı.</value>
+  </data>
+  <data name="STUDENT_DELETED_SUCCESS" xml:space="preserve">
+    <value>Öğrenci Silme Başarılı.</value>
+  </data>
+  <data name="STUDENT_LISTED_SUCCESS" xml:space="preserve">
+    <value>Öğrenci Listeleme Başarılı.</value>
+  </data>
+  <data name="Warehouse_CREATED_SUCCESS" xml:space="preserve">
+    <value>Depo başarıyla oluşturuldu.</value>
+  </data>
+  <data name="Warehouse_CREATE_FAILED" xml:space="preserve">
+    <value>Depo oluşturulurken bir hata meydana geldi.</value>
+  </data>
+  <data name="Warehouse_DELETED_SUCCESS" xml:space="preserve">
+    <value>Depo başarıyla silindi.</value>
+  </data>
+  <data name="Warehouse_DELETE_FAILED" xml:space="preserve">
+    <value>Depo silinirken bir hata meydana geldi.</value>
+  </data>
+  <data name="Warehouse_FOUND_SUCCESS" xml:space="preserve">
+    <value>Depo başarıyla bulundu.</value>
+  </data>
+  <data name="Warehouse_GET_FAILED" xml:space="preserve">
+    <value>Depo getirilemedi.</value>
+  </data>
+  <data name="Warehouse_LISTED_SUCCESS" xml:space="preserve">
+    <value>Depo başarıyla listelendi.</value>
+  </data>
+  <data name="Warehouse_LIST_EMPTY" xml:space="preserve">
+    <value>Depo listesi boş.</value>
+  </data>
+  <data name="Warehouse_LIST_FAILED" xml:space="preserve">
+    <value>Depo listesi getirilirken bir hata meydana geldi.</value>
+  </data>
+  <data name="Warehouse_MAX_LENGTH" xml:space="preserve">
+    <value>128 karakterden fazla girilemez</value>
+  </data>
+  <data name="Warehouse_MIN_LENGTH" xml:space="preserve">
+    <value>En az 2 karakter girilmeli!</value>
+  </data>
+  <data name="Warehouse_NOT_EMPTY" xml:space="preserve">
+    <value>Bu kısım boş bırakılamaz!</value>
+  </data>
+  <data name="Warehouse_NOT_FOUND" xml:space="preserve">
+    <value>Depo bulunamadı.</value>
+  </data>
+  <data name="Warehouse_UPDATED_SUCCESS" xml:space="preserve">
+    <value>Depo başarıyla güncellendi.</value>
+  </data>
+  <data name="Warehouse_UPDATE_FAILED" xml:space="preserve">
+    <value>Depo güncellenirken bir hata meydana geldi.</value>
+  </data>
+  <data name="PRODUCTTYPE_ADD_SUCCESS" xml:space="preserve">
+    <value>Ürün tipi başarılı bir şekilde eklendi </value>
+  </data>
+  <data name="PRODUCTTYPE_ADD_UNSUCCESS" xml:space="preserve">
+    <value>Ürün tipi ekleme işlemi başarısız </value>
+  </data>
+  <data name="PRODUCTTYPE_DELETE_SUCCESS" xml:space="preserve">
+    <value>Ürün tipi başarılı bir şekilde silindi </value>
+  </data>
+  <data name="PRODUCTTYPE_DELETE_UNSUCCESS" xml:space="preserve">
+    <value>Ürün tipi silme işlemi başarısız </value>
+  </data>
+  <data name="PRODUCTTYPE_DESCRIPTION_MAXIMUM_LENGTH" xml:space="preserve">
+    <value>Açıklama alanına en fazla 128 karakter girilebilir </value>
+  </data>
+  <data name="PRODUCTTYPE_DESCRIPTION_MINIMUM_LENGTH" xml:space="preserve">
+    <value>Açıklama alanına en az 1 karakter girilebilir </value>
+  </data>
+  <data name="PRODUCTTYPE_DESCRIPTION_NOT_EMPTY" xml:space="preserve">
+    <value>Açıklama alanı boş geçilemez </value>
+  </data>
+  <data name="PRODUCTTYPE_GETBYID_SUCCESS" xml:space="preserve">
+    <value>Ürün tipi başarılı bir şekilde getirildi </value>
+  </data>
+  <data name="PRODUCTTYPE_GETBYID_UNSUCCESS" xml:space="preserve">
+    <value>Ürün tipi getirme işlemi başarısız </value>
+  </data>
+  <data name="PRODUCTTYPE_LISTED_NOTFOUND" xml:space="preserve">
+    <value>Listelenecek ürün tipi bulunamadı </value>
+  </data>
+  <data name="PRODUCTTYPE_LISTED_SUCCESS" xml:space="preserve">
+    <value>Ürün tipleri başarılı bir şekilde listelendi </value>
+  </data>
+  <data name="PRODUCTTYPE_LISTED_UNSUCCESS" xml:space="preserve">
+    <value>Ürün tipi listeleme işlemi başarısız </value>
+  </data>
+  <data name="PRODUCTTYPE_NAME_MAXIMUM_LENGTH" xml:space="preserve">
+    <value>İsim alanına en fazla 128 karakter girilebilir </value>
+  </data>
+  <data name="PRODUCTTYPE_NAME_MINIMUM_LENGTH" xml:space="preserve">
+    <value>İsim alanına en az 1 karakter girilebilir </value>
+  </data>
+  <data name="PRODUCTTYPE_NAME_NOT_EMPTY" xml:space="preserve">
+    <value>İsim alanı boş geçilemez </value>
+  </data>
+  <data name="PRODUCTTYPE_UPDATE_SUCCESS" xml:space="preserve">
+    <value>Ürün tipi başarılı bir şekilde güncellendi </value>
+  </data>
+  <data name="PRODUCTTYPE_UPDATE_UNSUCCESS" xml:space="preserve">
+    <value>Ürün tipi güncelleme işlemi başarısız </value>
+  </data>
+  <data name="PRODUCT_CREATED_ERROR" xml:space="preserve">
+    <value>Ürün Oluşturulurken Bir Hata Meydana Geldi</value>
+  </data>
+  <data name="PRODUCT_CREATED_SUCCESS" xml:space="preserve">
+    <value>Ürün Başarıyla Eklendi.</value>
+  </data>
+  <data name="PRODUCT_DELETED_ERROR" xml:space="preserve">
+    <value>Ürün Silinirken Bir Hata Meydana Geldi</value>
+  </data>
+  <data name="PRODUCT_DELETED_SUCCESS" xml:space="preserve">
+    <value>Ürün Başarıyla Silindi.</value>
+  </data>
+  <data name="PRODUCT_GET_SUCCESS" xml:space="preserve">
+    <value>Ürün Başarılı Bir Şekilde Getirildi.</value>
+  </data>
+  <data name="PRODUCT_LISTED_EMPTY" xml:space="preserve">
+    <value>Ürün Listesi Boş</value>
+  </data>
+  <data name="PRODUCT_LISTED_ERROR" xml:space="preserve">
+    <value>Ürün Listelenirken Bir Hata Meydana Geldi</value>
+  </data>
+  <data name="PRODUCT_LISTED_SUCCESS" xml:space="preserve">
+    <value>Ürün Başarıyla Listelendi.</value>
+  </data>
+  <data name="PRODUCT_NAME_CANNOT_BE_EMPTY" xml:space="preserve">
+    <value>Bu Alan Boş Bırakılamaz</value>
+  </data>
+  <data name="PRODUCT_NAME_CANNOT_CONTAIN_NUMBER" xml:space="preserve">
+    <value>İsim sayı içermemelidir</value>
+  </data>
+  <data name="PRODUCT_NOT_FOUND" xml:space="preserve">
+    <value>Ürün Bulunamadı</value>
+  </data>
+  <data name="PRODUCT_PRICE_MUST_BE_GREATER_THAN_ZERO" xml:space="preserve">
+    <value>Fiyat sıfırdan büyük olmalıdır</value>
+  </data>
+  <data name="PRODUCT_PRICE_MUST_HAVE_NO_MORE_THAN_TWO_DECIMAL_PLACES" xml:space="preserve">
+    <value>Fiyat en fazla 18 haneli ve 2 ondalık basamaklı olabilir.</value>
+  </data>
+  <data name="PRODUCT_UPDATED_ERROR" xml:space="preserve">
+    <value>Ürün Güncellenirken Bir Hata Meydana Geldi</value>
+  </data>
+  <data name="PRODUCT_UPDATED_SUCCESS" xml:space="preserve">
+    <value>Ürün Başarıyla Güncellendi.</value>
+  </data>
+  <data name="CUSTOMER_ADDRESS_MAXIMUM_LENGTH" xml:space="preserve">
+    <value>128 karakteri geçemez</value>
+  </data>
+  <data name="CUSTOMER_ADDRESS_MINIMUM_LENGTH" xml:space="preserve">
+    <value>En az 2 karakter uzunluğunda olmalıdır</value>
+  </data>
+  <data name="CUSTOMER_ADDRESS_NOT_EMPTY" xml:space="preserve">
+    <value>Müşteri adresi boş olamaz.</value>
+  </data>
+  <data name="CUSTOMER_MATCHES" xml:space="preserve">
+    <value>Geçersiz müşteri telefonu</value>
+  </data>
+  <data name="CUSTOMER_NAME_MAXIMUM_LENGTH" xml:space="preserve">
+    <value>128 karakteri geçemez!</value>
+  </data>
+  <data name="CUSTOMER_NAME_MINIMUM_LENGTH" xml:space="preserve">
+    <value>En az 2 karakter uzunluğunda olmalıdır</value>
+  </data>
+  <data name="CUSTOMER_NAME_NOT_EMPTY" xml:space="preserve">
+    <value>Müşteri adı boş olamaz.</value>
+  </data>
+  <data name="CUSTOMER_PHONE_MAXIMUM_LENGTH" xml:space="preserve">
+    <value>40 basamağı geçemez!</value>
+  </data>
+  <data name="CUSTOMER_PHONE_MINIMUM_LENGTH" xml:space="preserve">
+    <value>En az 10 basamak uzunluğunda olmalıdır</value>
+  </data>
+  <data name="CUSTOMER_PHONE_NOT_EMPTY" xml:space="preserve">
+    <value>Müşteri telefon numarası boş olamaz.</value>
+  </data>
+  <data name="BRANCH_ADDRESS_MAXIMUM_LENGTH" xml:space="preserve">
+    <value>Şube adresine 128 karakterden fazla girilemez</value>
+  </data>
+  <data name="BRANCH_ADDRESS_MINIMUM_LENGTH" xml:space="preserve">
+    <value>Şube adresine en az 2 karakter girilmeli</value>
+  </data>
+  <data name="BRANCH_ADDRESS_NOT_EMPTY" xml:space="preserve">
+    <value>Şube adresi Boş Bırakılamaz.</value>
+  </data>
+  <data name="BRANCH_ADD_ERROR" xml:space="preserve">
+    <value>Şube Ekleme Başarısız.</value>
+  </data>
+  <data name="BRANCH_ADD_SUCCESS" xml:space="preserve">
+    <value>Şube Ekleme Başarılı.</value>
+  </data>
+  <data name="BRANCH_DELETE_ERROR" xml:space="preserve">
+    <value>Şube Silme Başarısız.</value>
+  </data>
+  <data name="BRANCH_DELETE_SUCCESS" xml:space="preserve">
+    <value>Şube Silme Başarılı.</value>
+  </data>
+  <data name="BRANCH_GETBYID_ERROR" xml:space="preserve">
+    <value>Şube Getirme Başarısız.</value>
+  </data>
+  <data name="BRANCH_GETBYID_SUCCESS" xml:space="preserve">
+    <value>Şube Getirme Başarılı.</value>
+  </data>
+  <data name="BRANCH_LISTED_ERROR" xml:space="preserve">
+    <value>Şube Listeleme Başarısız.</value>
+  </data>
+  <data name="BRANCH_LISTED_NOTFOUND" xml:space="preserve">
+    <value>Şube Bulunamadı.</value>
+  </data>
+  <data name="BRANCH_LISTED_SUCCESS" xml:space="preserve">
+    <value>Şube Listeleme Başarılı.</value>
+  </data>
+  <data name="BRANCH_NAME_MAXIMUM_LENGTH" xml:space="preserve">
+    <value>Şube adına 128 karakterden fazla girilemez</value>
+  </data>
+  <data name="BRANCH_NAME_MINIMUM_LENGTH" xml:space="preserve">
+    <value>Şube adına en az 2 karakter girilmeli</value>
+  </data>
+  <data name="BRANCH_NAME_NOT_EMPTY" xml:space="preserve">
+    <value>Şube adı boş bırakılamaz.</value>
+  </data>
+  <data name="BRANCH_UPDATE_ERROR" xml:space="preserve">
+    <value>Şube Güncelleme Başarısız.</value>
+  </data>
+  <data name="BRANCH_UPDATE_SUCCESS" xml:space="preserve">
+    <value>Şube Güncelleme Başarılı.</value>
+  </data>
+  <data name="ADMIN_CREATED_SUCCESS" xml:space="preserve">
+    <value>Yönetici başarıyla oluşturuldu.</value>
+  </data>
+  <data name="ADMIN_CREATE_ERROR" xml:space="preserve">
+    <value>Yönetici oluşturulurken bir hata meydana geldi.</value>
+  </data>
+  <data name="ADMIN_DELETED_SUCCESS" xml:space="preserve">
+    <value>Yönetici başarıyla silindi.</value>
+  </data>
+  <data name="ADMIN_DELETE_ERROR" xml:space="preserve">
+    <value>Yönetici silinirken bir hata meydana geldi.</value>
+  </data>
+  <data name="ADMIN_EMAIL_IN_USE" xml:space="preserve">
+    <value>Bu e-posta adresi zaten kullanılıyor.</value>
+  </data>
+  <data name="ADMIN_E_MAIL_FIELD_IS_REQUIRED" xml:space="preserve">
+    <value>E-posta alanı zorunludur.</value>
+  </data>
+  <data name="ADMIN_GETBYID_ERROR" xml:space="preserve">
+    <value>Yönetici bulunamadı.</value>
+  </data>
+  <data name="ADMIN_LISTED_ERROR" xml:space="preserve">
+    <value>Yönetici listelenirken bir hata meydana geldi.</value>
+  </data>
+  <data name="ADMIN_LISTED_NOTFOUND" xml:space="preserve">
+    <value>Hiçbir Admin bulunamadı.</value>
+  </data>
+  <data name="ADMIN_LISTED_SUCCESS" xml:space="preserve">
+    <value>Yönetici başarıyla listelendi.</value>
+  </data>
+  <data name="ADMIN_NAMESPACE_IS_REQUIRED" xml:space="preserve">
+    <value>Ad alanı zorunludur.</value>
+  </data>
+  <data name="ADMIN_NAME_MAX_LENGTH_ERROR" xml:space="preserve">
+    <value>Ad 50 karakterden uzun olamaz.</value>
+  </data>
+  <data name="ADMIN_NAME_MIN_LENGTH_ERROR" xml:space="preserve">
+    <value>Ad 2 karakterden az olamaz.</value>
+  </data>
+  <data name="ADMIN_NAME_NUMERIC_FORBIDDEN" xml:space="preserve">
+    <value>Ad alanında sayısal karakter kullanılamaz.</value>
+  </data>
+  <data name="ADMIN_PHOTO_SIZE_EXCEEDS_LIMIT" xml:space="preserve">
+    <value>Fotoğraf boyutu 500 KB'dan fazla olamaz.</value>
+  </data>
+  <data name="ADMIN_SURNAME_FIELD_IS_REQUIRED" xml:space="preserve">
+    <value>Soyad alanı zorunludur.</value>
+  </data>
+  <data name="ADMIN_SURNAME_MAX_LENGTH_ERROR" xml:space="preserve">
+    <value>Soyad 50 karakterden uzun olamaz.</value>
+  </data>
+  <data name="ADMIN_SURNAME_MIN_LENGTH_ERROR" xml:space="preserve">
+    <value>Soyad 2 karakterden az olamaz.</value>
+  </data>
+  <data name="ADMIN_SURNAME_NUMERIC_FORBIDDEN" xml:space="preserve">
+    <value>Soyad alanında sayısal karakter kullanılamaz.</value>
+  </data>
+  <data name="ADMIN_UPDATE_ERROR" xml:space="preserve">
+    <value>Yönetici  güncelleme sırasında bir hata meydana geldi.</value>
+  </data>
+  <data name="ADMIN_UPDATE_SUCCESS" xml:space="preserve">
+    <value>Yöneticibaşarıyla güncellendi.</value>
+  </data>
+  <data name="ADMIN_VALID_EMAIL_REQUIRED" xml:space="preserve">
+    <value>Geçerli bir e-posta adresi girilmelidir.</value>
+  </data>
+  <data name="CATEGORY_CREATED_SUCCESS" xml:space="preserve">
+    <value>Kategori oluşturuldu.</value>
+  </data>
+  <data name="CATEGORY_CREATE_FAILED" xml:space="preserve">
+    <value>Kategori oluşturulurken bir hata meydana geldi</value>
+  </data>
+  <data name="CATEGORY_DELETED_SUCCESS" xml:space="preserve">
+    <value>Kategori başarıyla silindi.</value>
+  </data>
+  <data name="CATEGORY_DELETE_FAILED" xml:space="preserve">
+    <value>Kategori silinirken bir hata meydana geldi</value>
+  </data>
+  <data name="CATEGORY_FOUND_SUCCESS" xml:space="preserve">
+    <value>Aranan kategori bulundu.</value>
+  </data>
+  <data name="CATEGORY_GET_FAILED" xml:space="preserve">
+    <value>Kategori getirilemedi</value>
+  </data>
+  <data name="CATEGORY_LISTED_SUCCESS" xml:space="preserve">
+    <value>Kategoriler başarıyla listelendi.</value>
+  </data>
+  <data name="CATEGORY_LIST_EMPTY" xml:space="preserve">
+    <value>Kategori listesi boş</value>
+  </data>
+  <data name="CATEGORY_LIST_FAILED" xml:space="preserve">
+    <value>Kategoriler getirilirken bir hata meydana geldi</value>
+  </data>
+  <data name="CATEGORY_MAX_LENGTH" xml:space="preserve">
+    <value>128 karakterden fazla girilemez</value>
+  </data>
+  <data name="CATEGORY_MIN_LENGTH" xml:space="preserve">
+    <value>En az 2 karakter girilmeli</value>
+  </data>
+  <data name="CATEGORY_NAMESPACE_IS_REQUIRED" xml:space="preserve">
+    <value>Bu alanın girilmesi zorunludur</value>
+  </data>
+  <data name="CATEGORY_NOT_FOUND" xml:space="preserve">
+    <value>Kategori bulunamadı.</value>
+  </data>
+  <data name="CATEGORY_UPDATED_FAILED" xml:space="preserve">
+    <value>Kategori güncellenirken hata oluştu</value>
+  </data>
+  <data name="CATEGORY_UPDATED_SUCCESS" xml:space="preserve">
+    <value>Kategori güncelleme başarılı.</value>
+  </data>
+  <data name="BRANCH_COMPANY_RELATION" xml:space="preserve">
+    <value>Firma Seçiniz</value>
+  </data>
+  <data name="ADMIN_GETBYID_SUCCESS" xml:space="preserve">
+    <value>Yönetici başarılı bir şekilde listelendi</value>
+  </data>
+  <data name="PROMOTION_PRODUCT_RELATION" xml:space="preserve">
+    <value>Lütfen Promosyon uygulanacak ürünü seçiniz</value>
+  </data>
+  <data name="PROMOTION_END_DATE_GREATER_THAN_START_DATE" xml:space="preserve">
+    <value>Promosyon bitiş tarihi başlangıç tarihinden sonraki bir tarih olmalıdır</value>
+  </data>
+  <data name="PROMOTION_END_DATE_REQUIRED" xml:space="preserve">
+    <value>Promosyon bitiş tarihi zorunludur</value>
+  </data>
+  <data name="PROMOTION_IS_ACTIVE_REQUIRED" xml:space="preserve">
+    <value>Promosyon aktifliğini seçiniz</value>
+  </data>
+  <data name="PROMOTION_START_DATE_GREATER_THAN_TODAY" xml:space="preserve">
+    <value>Promosyon bugünden önceki bir tarihte başlatılamaz</value>
+  </data>
+  <data name="PROMOTION_START_DATE_REQUIRED" xml:space="preserve">
+    <value>Promosyon başlama tarihi zorunludur</value>
+  </data>
+  <data name="PROMOTION_START_DATE_LESS_THAN_END_DATE" xml:space="preserve">
+    <value>Promosyon başlangıç tarihi , bitiş tarihinden önceki bir tarih olmalıdır</value>
+  </data>
+  <data name="PROMOTION_START_DATE_NOT_EQUAL_END_DATE" xml:space="preserve">
+    <value>Promosyon başlama ve bitiş tarihleri aynı tarih olamaz</value>
+  </data>
+  <data name="BRANCH_COMPANY_LISTED_DELETED" xml:space="preserve">
+    <value>Firma Silinmiş</value>
+  </data>
+  <data name="COUNTRY_CREATE_ERROR" xml:space="preserve">
+    <value>Ülke oluşturulurken bir hata meydana geldi.</value>
+  </data>
+  <data name="COUNTRY_CREATE_SUCCESS" xml:space="preserve">
+    <value>Ülke başarıyla oluşturuldu.</value>
+  </data>
+  <data name="COUNTRY_DELETE_ERROR" xml:space="preserve">
+    <value>Ülke silinirken bir hata meydana geldi.</value>
+  </data>
+  <data name="COUNTRY_DELETE_SUCCESS" xml:space="preserve">
+    <value>Ülke başarıyla silindi.</value>
+  </data>
+  <data name="COUNTRY_GETBYID_ERROR" xml:space="preserve">
+    <value>Ülke getirilemedi.</value>
+  </data>
+  <data name="COUNTRY_GETBYID_SUCCESS" xml:space="preserve">
+    <value>Ülke Getirme Başarılı.</value>
+  </data>
+  <data name="COUNTRY_LISTED_ERROR" xml:space="preserve">
+    <value>Ülkeleri listelerken bir hata meydana geldi.</value>
+  </data>
+  <data name="COUNTRY_LISTED_NOTFOUND" xml:space="preserve">
+    <value>Ülke bulunamadı.</value>
+  </data>
+  <data name="COUNTRY_LISTED_SUCCESS" xml:space="preserve">
+    <value>Ülke Listeleme Başarılı.</value>
+  </data>
+  <data name="COUNTRY_NOT_FOUND" xml:space="preserve">
+    <value>Ülke bulunamadı.</value>
+  </data>
+  <data name="COUNTRY_UPDATE_ERROR" xml:space="preserve">
+    <value>Ülke güncellenirken bir hata meydana geldi.</value>
+  </data>
+  <data name="COUNTRY_UPDATE_SUCCESS" xml:space="preserve">
+    <value>Ülke başarıyla güncellendi</value>
+  </data>
+  <data name="COUNTRY_NAME_MAXIMUM_LENGTH" xml:space="preserve">
+    <value>Ülke adı en fazla 40 karakter olmalı</value>
+  </data>
+  <data name="COUNTRY_NAME_MINIMUM_LENGTH" xml:space="preserve">
+    <value>Ülke adı en az 2 karakter olmalı</value>
+  </data>
+  <data name="COUNTRY_NAME_NOT_EMPTY" xml:space="preserve">
+    <value>Ülke adı boş bırakılmamalı</value>
+  </data>
+  <data name="POPULATION_MUST_BE_GREATER_THAN_ZERO" xml:space="preserve">
+    <value>Nüfus 0'dan büyük olmalıdır</value>
+  </data>
+  <data name="COUNTRY_POPULATİON_NOT_EMPTY" xml:space="preserve">
+    <value>Ülke nüfusu boş bırakılamaz</value>
+  </data>
+  <data name="ORDER_DISCOUNT_VALIDATION" xml:space="preserve">
+    <value>İndirim oranı 0 ile 100 arasında olmalıdır.</value>
+  </data>
+  <data name="CITY_CREATED_ERROR" xml:space="preserve">
+    <value>Şehir oluşturulurken hata oluştu.</value>
+  </data>
+  <data name="CITY_CREATED_SUCCESS" xml:space="preserve">
+    <value>Şehir başarıyla oluşturuldu.</value>
+  </data>
+  <data name="CITY_DELETED_ERROR" xml:space="preserve">
+    <value>Şehir silinirken hata oluştu.</value>
+  </data>
+  <data name="CITY_DELETED_SUCCESS" xml:space="preserve">
+    <value>Şehir başarıyla silindi.</value>
+  </data>
+  <data name="CITY_GET_SUCCESS" xml:space="preserve">
+    <value>Şehir başarıyla getirildi.</value>
+  </data>
+  <data name="CITY_LISTED_EMPTY" xml:space="preserve">
+    <value>Listelenecek şehir bulunamadı.</value>
+  </data>
+  <data name="CITY_LISTED_ERROR" xml:space="preserve">
+    <value>Şehirler listelenirken hata oluştu.</value>
+  </data>
+  <data name="CITY_LISTED_SUCCESS" xml:space="preserve">
+    <value>Şehirler başarıyla listelendi.</value>
+  </data>
+  <data name="CITY_NAME_CANNOT_BE_EMPTY" xml:space="preserve">
+    <value>Şehir adı boş olamaz.</value>
+  </data>
+  <data name="CITY_NAME_CANNOT_CONTAIN_NUMBER" xml:space="preserve">
+    <value>Şehir adı rakam içeremez.</value>
+  </data>
+  <data name="CITY_NOT_FOUND" xml:space="preserve">
+    <value>Şehir bulunamadı.</value>
+  </data>
+  <data name="CITY_UPDATED_ERROR" xml:space="preserve">
+    <value>Şehir güncellenirken hata oluştu.</value>
+  </data>
+  <data name="CITY_UPDATED_SUCCESS" xml:space="preserve">
+    <value>Şehir başarıyla güncellendi.</value>
+  </data>
+  <data name="CANCEL_MANAGER" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="DELETE_CONFIRM_MANAGER" xml:space="preserve">
+    <value>Bu yöneticiyi silmek istediğinizden emin misiniz?</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_MANAGER" xml:space="preserve">
+    <value>Yöneticiyi Sil</value>
+  </data>
+  <data name="DELETE_MANAGER" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="EMPLOYEE_TITLE_REQUIRED" xml:space="preserve">
+    <value>Ünvan Seçiniz!</value>
+  </data>
+  <data name="PROMOTION_COMPANY_RELATION" xml:space="preserve">
+    <value>Lütfen promosyonun hangi şirkete ait olduğunu belirtiniz</value>
+  </data>
+  <data name="PRODUCT_COMPANY_RELATION" xml:space="preserve">
+    <value>Lütfen Ürünün Sirketini Seciniz</value>
+  </data>
+  <data name="CUSTOMER_COMPANY_RELATION" xml:space="preserve">
+    <value>Lütfen müşterinin hangi şirkete ait olduğunu seçiniz.</value>
+  </data>
+  <data name="PRODUCT_COMPANY_DELETED" xml:space="preserve">
+    <value>Şirket Silinmiş</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_CREATED_SUCCESS" xml:space="preserve">
+    <value>Stok Tipi Boyutu başarıyla oluşturuldu.</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_CREATE_FAILED" xml:space="preserve">
+    <value>Stok Tipi Boyutu oluşturulurken hata oluştu.</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_DELETED_SUCCESS" xml:space="preserve">
+    <value>Stok Tipi Boyutu başarıyla silindi.</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_DELETE_FAILED" xml:space="preserve">
+    <value>Stok Tipi Boyutu silinirken hata oluştu.</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_FOUND_SUCCESS" xml:space="preserve">
+    <value>Stok Tipi Boyutu başarıyla bulundu.</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_GET_FAILED" xml:space="preserve">
+    <value>Stok Tipi Boyutu getirilirken hata oluştu.</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_LISTED_SUCCESS" xml:space="preserve">
+    <value>Stok Tipi Boyutları başarıyla listelendi.</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_LIST_EMPTY" xml:space="preserve">
+    <value>Listelenecek Stok Tipi Boyutu bulunamadı.</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_LIST_FAILED" xml:space="preserve">
+    <value>Stok Tipi Boyutları listelenirken hata oluştu.</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_MAX_LENGTH" xml:space="preserve">
+    <value>128 karakterden fazla girilemez</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_MIN_LENGTH" xml:space="preserve">
+    <value>En az 1 karakter girilmeli</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_NOT_EMPTY" xml:space="preserve">
+    <value>Bu kısım boş bırakılamaz</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_NOT_FOUND" xml:space="preserve">
+    <value>Stok Tipi Boyutu bulunamadı.</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_UPDATE_FAILED" xml:space="preserve">
+    <value>Stok Tipi Boyutu güncellenirken hata oluştu.</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_UPDATE_SUCCESS" xml:space="preserve">
+    <value>Stok Tipi Boyutu başarıyla güncellendi.</value>
+  </data>
+  <data name="PROMOTION_COMPANY_DELETED" xml:space="preserve">
+    <value>Şirket silinmiş</value>
+  </data>
+  <data name="PROMOTION_PRODUCT_DELETED" xml:space="preserve">
+    <value>Ürün silinmiş</value>
+  </data>
+  <data name="MANAGER_CREATED_SUCCESS" xml:space="preserve">
+    <value>Yönetici başarıyla oluşturuldu.</value>
+  </data>
+  <data name="MANAGER_CREATE_FAILED" xml:space="preserve">
+    <value>Yönetici oluşturulurken bir hata meydana geldi.</value>
+  </data>
+  <data name="MANAGER_DELETED_SUCCESS" xml:space="preserve">
+    <value>Yönetici başarıyla silindi.</value>
+  </data>
+  <data name="MANAGER_DELETE_FAILED" xml:space="preserve">
+    <value>Yönetici silinirken bir hata meydana geldi.</value>
+  </data>
+  <data name="MANAGER_EMAIL_INVALID" xml:space="preserve">
+    <value>Geçerli bir email adresi giriniz</value>
+  </data>
+  <data name="MANAGER_EMAIL_NOT_EMPTY" xml:space="preserve">
+    <value>Email alanı boş bırakılamaz</value>
+  </data>
+  <data name="MANAGER_FIRST_NAME_INVALID_CHARS" xml:space="preserve">
+    <value>İsim özel karakter veya rakam içeremez</value>
+  </data>
+  <data name="MANAGER_FIRST_NAME_MAX_LENGTH" xml:space="preserve">
+    <value>İsim 128 karakterden fazla olamaz</value>
+  </data>
+  <data name="MANAGER_FIRST_NAME_MIN_LENGTH" xml:space="preserve">
+    <value>İsim en az 2 karakter olmalıdır</value>
+  </data>
+  <data name="MANAGER_FIRST_NAME_NOT_EMPTY" xml:space="preserve">
+    <value>İsim alanı boş bırakılamaz</value>
+  </data>
+  <data name="MANAGER_FOUND_SUCCESS" xml:space="preserve">
+    <value>Yönetici başarıyla bulundu.</value>
+  </data>
+  <data name="MANAGER_GET_FAILED" xml:space="preserve">
+    <value>Yönetici verilerini alırken bir hata meydana geldi.</value>
+  </data>
+  <data name="MANAGER_LAST_NAME_INVALID_CHARS" xml:space="preserve">
+    <value>Soyisim özel karakter veya rakam içeremez</value>
+  </data>
+  <data name="MANAGER_LAST_NAME_MAX_LENGTH" xml:space="preserve">
+    <value>Soyisim 128 karakterden fazla olamaz</value>
+  </data>
+  <data name="MANAGER_LAST_NAME_MIN_LENGTH" xml:space="preserve">
+    <value>Soyisim en az 2 karakter olmalıdır</value>
+  </data>
+  <data name="MANAGER_LAST_NAME_NOT_EMPTY" xml:space="preserve">
+    <value>Soyisim alanı boş bırakılamaz</value>
+  </data>
+  <data name="MANAGER_LISTED_SUCCESS" xml:space="preserve">
+    <value>Yöneticiler başarıyla listelendi.</value>
+  </data>
+  <data name="MANAGER_LIST_EMPTY" xml:space="preserve">
+    <value>Yönetici listesi boş.</value>
+  </data>
+  <data name="MANAGER_LIST_FAILED" xml:space="preserve">
+    <value>Yöneticiler listelenirken bir hata meydana geldi.</value>
+  </data>
+  <data name="MANAGER_NOT_FOUND" xml:space="preserve">
+    <value>Yönetici bulunamadı.</value>
+  </data>
+  <data name="MANAGER_UPDATE_FAILED" xml:space="preserve">
+    <value>Yönetici güncellenirken bir hata meydana geldi.</value>
+  </data>
+  <data name="MANAGER_UPDATE_SUCCESS" xml:space="preserve">
+    <value>Yönetici başarıyla güncellendi.</value>
+  </data>
+  <data name="EMPLOYEE_TURKISH_CHAR" xml:space="preserve">
+    <value>Girilen Bilgiler Türkçe karakter(ç,ı,ğ,ö,ş,ü,Ç,İ,Ğ,Ö,Ş,Ü) içermemelidir.</value>
+  </data>
+  <data name="COUNTRY_NAME_MUST_BE_UNIQUE" xml:space="preserve">
+    <value>Ülke ismi benzersiz olmalıdır</value>
+  </data>
+  <data name="CITY_NAME_MUST_BE_UNIQUE" xml:space="preserve">
+    <value>Şehir ismi benzersiz olmalıdır</value>
+  </data>
+  <data name="COUNTRY_NAME_SHOULD_BE_STRING" xml:space="preserve">
+    <value>Ülke ismi metin olmalıdır</value>
+  </data>
+  <data name="CHANGE_PASSWORD_ERROR" xml:space="preserve">
+    <value>Şifre değiştirilirken hata meydana geldi</value>
+  </data>
+  <data name="CHANGE_PASSWORD_SUCCESS" xml:space="preserve">
+    <value>Şifre başarıyla değişirildi</value>
+  </data>
+  <data name="StockTypeSizeIndex" xml:space="preserve">
+    <value>Stok Tipi Boyut Listesi</value>
+  </data>
+  <data name="Update_Employee" xml:space="preserve">
+    <value>Çalışanı Güncelle</value>
+  </data>
+  <data name="The_information_entered_is_not_valid." xml:space="preserve">
+    <value>Girilen bilgiler geçerli değil.</value>
+  </data>
+  <data name="An_error_occurred_while_updating_the_profile" xml:space="preserve">
+    <value>Profil güncellenirken bir hata oluştu</value>
+  </data>
+  <data name="Kategorileri_getirirken_bir_hata_meydana_geldi" xml:space="preserve">
+    <value>Kategorileri getirirken bir hata meydana geldi</value>
+  </data>
+  <data name="No_photo_selected_and_no_existing_photo_found" xml:space="preserve">
+    <value>Hiçbir fotoğraf seçilmedi ve mevcut bir fotoğraf bulunamadı.</value>
+  </data>
+  <data name="Profile_updated_successfully" xml:space="preserve">
+    <value>Profil başarıyla güncellendi.</value>
+  </data>
+  <data name="Şehirleri_getirirken_bir_hata_meydana_geldi" xml:space="preserve">
+    <value>Şehirleri getirirken bir hata meydana geldi</value>
+  </data>
+  <data name="Customer_and_Location" xml:space="preserve">
+    <value>Müşteri ve Konum</value>
+  </data>
+  <data name="Sales_and_Marketing" xml:space="preserve">
+    <value>Satış ve Pazarlama</value>
+  </data>
+  <data name="PRODUCT_CANNOT_DELETE_IS_IN_ORDER" xml:space="preserve">
+    <value>Silmek istediğiniz ürün bir siparişe bağlı. Ürünü Pasif durumuna almak ister misiniz?</value>
+  </data>
+  <data name="PRODUCT_PASSIVED_SUCCESS" xml:space="preserve">
+    <value>Ürün başarıyla pasif duruma getirildi</value>
+  </data>
+  <data name="PASSIVE_PRODUCT" xml:space="preserve">
+    <value>Ürünü Pasif Yap</value>
+  </data>
+  <data name="Managementt" xml:space="preserve">
+    <value>Yönetim</value>
+  </data>
+  <data name="No matching results" xml:space="preserve">
+    <value>Eşleşen sonuç yok</value>
+  </data>
+  <data name="Select Country" xml:space="preserve">
+    <value>Ulke Seciniz</value>
+  </data>
+  <data name="EMPLOYEE_INVALID_EMAIL_DOMAIN" xml:space="preserve">
+    <value>E-posta alanı uygun formatta olmalıdır</value>
+  </data>
+  <data name="PRODUCT_CATEGORY_RELATION" xml:space="preserve">
+    <value>Lütfen Ürünün Kategorisini Seciniz</value>
+  </data>
+  <data name="PRODUCT_PRICE_CANNOT_BE_EMPTY" xml:space="preserve">
+    <value>Bu Alan Boş Bırakılamaz</value>
+  </data>
+  <data name="Select_Category" xml:space="preserve">
+    <value>Kategori Seciniz</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Yönetici</value>
+  </data>
+  <data name="CityName" xml:space="preserve">
+    <value>Şehir Adı</value>
+  </data>
+  <data name="CustomerDetails" xml:space="preserve">
+    <value>Müşteri Detayları</value>
+  </data>
+  <data name="CUSTOMER_CITY_RELATION" xml:space="preserve">
+    <value>Lütfen müşterinin hangi şehirde olduğunu seçiniz.</value>
+  </data>
+  <data name="CUSTOMER_COUNTRY_RELATION" xml:space="preserve">
+    <value>Lütfen müşterinin hangi ülkede olduğunu seçiniz.</value>
+  </data>
+  <data name="SelectCity" xml:space="preserve">
+    <value>Şehir Seç</value>
+  </data>
+  <data name="COMPANY_CANNOT_DELETE_IS_IN_ORDER" xml:space="preserve">
+    <value>Silmek istediğiniz şirketbir siparişe bağlı. Şirketi Pasif durumuna almak ister misiniz?</value>
+  </data>
+  <data name="PASSIVE_COMPANY" xml:space="preserve">
+    <value>Şirketi Pasif Yap</value>
+  </data>
+  <data name="COMPANY_PASSIVED_SUCCESS" xml:space="preserve">
+    <value>Şirket başarıyla pasif duruma getirildi</value>
+  </data>
+</root>

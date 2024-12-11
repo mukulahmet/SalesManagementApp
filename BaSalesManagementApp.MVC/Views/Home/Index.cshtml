@@ -1,0 +1,12 @@
+﻿ @using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Resource> localizer
+@{
+    ViewData["Title"] = @localizer["HomePage"];
+}
+
+<div class="text-center">
+    @* <h1 class="display-4">@_localization.Getkey("Welcome").Value</h1> *@
+    <h1 class="display-4">@localizer["Welcome"]</h1>
+    @* <h1>@ViewBag.Message</h1> *@
+    <p>@localizer["Learn_About"] <a href="https://docs.microsoft.com/aspnet/core">@localizer["building_Web_apps_with_ASP.NET_Core"]</a>.</p>
+</div>

@@ -1,0 +1,10 @@
+﻿@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Resource> localizer
+
+@{
+    ViewData["Title"] = localizer["AccessDeniedTitle"];
+}
+
+<h2>@localizer["AccessDeniedTitle"]</h2>
+<p>@localizer["AccessDeniedMessage"]</p>
+<p>@localizer["ContactAdmin"]</p>

@@ -1,0 +1,78 @@
+﻿@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Resource> localizer
+@model BaSalesManagementApp.MVC.Models.ProductVMs.ProductUpdateVM
+
+@{
+    ViewData["Title"] = localizer["Update"];
+}
+
+<div class="content-wrapper">
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <h4 class="py-3 mb-4">
+            <span class="text-muted fw-light">@localizer["Product"] /</span>
+            @localizer["Update"]
+        </h4>
+        <div class="row">
+            <div class="content-wrapper">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <form asp-action="Update">
+                                <input type="hidden" asp-for="Id" class="form-control" />
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <div class="mb-3">
+                                    <label asp-for="Name" class="control-label">@localizer["Product_Name"]</label>
+                                    <input asp-for="Name" class="form-control" />
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label asp-for="Price" class="control-label">@localizer["Price"]</label>
+                                    <input asp-for="Price" class="form-control" type="number" />
+                                    <span asp-validation-for="Price" class="text-danger"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label asp-for="CategoryId" class="form-label">@localizer["CategoryName"]</label>
+                                    <select asp-for="CategoryId" class="form-control">
+                                        @foreach (var category in Model.Categories)
+                                        {
+                                            <option value="@category.Id">@category.Name</option>
+                                        }
+                                    </select>
+                                    <span asp-validation-for="CategoryId" class="text-danger"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label asp-for="CompanyId" class="form-label">@localizer["Company"]</label>
+                                    <select asp-for="CompanyId" class="form-control">
+                                        @if (Model != null && Model.Companies != null && Model.Companies.Any())
+                                        {
+                                            <option value="">@localizer["Select_Company"]</option>
+                                            @foreach (var company in Model.Companies)
+                                            {
+                                                <option value="@company.Id">@company.Name</option>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <option value="" disabled selected></option>
+                                        }
+                                    </select>
+                                    <span asp-validation-for="CompanyId" class="text-danger"></span>
+                                </div>
+                                <div>
+                                    <input type="submit" value="@localizer["Save"]" class="btn btn-primary" />
+                                    <a asp-action="Index" class="btn btn-secondary">@localizer["BackToList"]</a>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }

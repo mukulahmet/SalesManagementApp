@@ -1,0 +1,170 @@
+﻿@model BaSalesManagementApp.MVC.Models.PromotionVMs.PromotionUpdateVM
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Resource> localizer
+
+@{
+    ViewData["Title"] = localizer["Update"];
+}
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<div class="content-wrapper">
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <div class="row">
+            <div class="content-wrapper">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <form id="updatePromotionForm" asp-action="Update">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <input type="hidden" asp-for="Id" />
+                                <div class="mb-3">
+                                    <label asp-for="Discount" class="form-label">@localizer["Discount"]</label>
+                                    <input asp-for="Discount" class="form-control" />
+                                    <span asp-validation-for="Discount" class="text-danger"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label asp-for="Price" class="form-label">@localizer["Price"]</label>
+                                    <input asp-for="Price" class="form-control" />
+                                    <span asp-validation-for="Price" class="text-danger"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label asp-for="TotalPrice" class="form-label">@localizer["TotalPrice"]</label>
+                                    <input asp-for="TotalPrice" class="form-control" />
+                                    <span asp-validation-for="TotalPrice" class="text-danger"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label asp-for="IsActive" class="form-check-label">@localizer["IsActive"]</label>
+                                    <input asp-for="IsActive" class="form-check-input" />
+                                </div>
+                                <div class="mb-3">
+                                    <label asp-for="StartDate" class="form-label">@localizer["StartDate"]</label>
+                                    <input asp-for="StartDate" type="date" class="form-control" value="@Model.StartDate.ToString("yyyy-MM-dd")" />
+                                    <span asp-validation-for="StartDate" class="text-danger"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label asp-for="EndDate" class="form-label">@localizer["EndDate"]</label>
+                                    <input asp-for="EndDate" type="date" class="form-control" value="@Model.EndDate.ToString("yyyy-MM-dd")" />
+                                    <span asp-validation-for="EndDate" class="text-danger"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label asp-for="CompanyId" class="form-label">@localizer["Company"]</label>
+                                    <select id="CompanyId" asp-for="CompanyId" class="form-control">
+                                        @if (Model.Companies != null && Model.CompanyId != null)
+                                        {
+                                            @foreach (var company in Model.Companies)
+                                            {
+                                                @if (company.Id == Model.CompanyId)
+                                                {
+                                                    <option value="@company.Id" selected>@company.Name</option>
+                                                }
+                                                else
+                                                {
+                                                    <option value="@company.Id">@company.Name</option>
+                                                }
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <option value="" disabled selected>@localizer["Select_Company"]</option>
+                                        }
+                                    </select>
+                                    <span asp-validation-for="CompanyId" class="text-danger"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label asp-for="ProductId" class="form-label">@localizer["Product"]</label>
+                                    <select id="ProductId" asp-for="ProductId" class="form-control">
+                                        <!-- Products will be populated via JavaScript -->
+                                    </select>
+                                    <span asp-validation-for="ProductId" class="text-danger"></span>
+                                </div>
+                                <div>
+                                    <input type="submit" value="@localizer["Update"]" class="btn btn-primary" />
+                                    <a asp-action="Index" class="btn btn-secondary">@localizer["BackToList"]</a>
+                                </div>
+                                @for (int i = 0; i < Model.Companies.Count(); i++)
+                                {
+                                    <input type="hidden" name="Companies[@i].Id" value="@Model.Companies.ElementAt(i).Id" />
+                                    <input type="hidden" name="Companies[@i].Name" value="@Model.Companies.ElementAt(i).Name" />
+                                }
+                                @for (int i = 0; i < Model.Products.Count(); i++)
+                                {
+                                    <input type="hidden" name="Products[@i].Id" value="@Model.Products.ElementAt(i).Id" />
+                                    <input type="hidden" name="Products[@i].Name" value="@Model.Products.ElementAt(i).Name" />
+                                }
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            var selectedCompanyId = $('#CompanyId').val();
+
+            if (selectedCompanyId) {
+                $.ajax({
+                    url: '/Promotion/GetProductsByCompanyId',
+                    type: 'GET',
+                    data: { companyId: selectedCompanyId },
+                    success: function (response) {
+                        var options = '<option value="">@localizer["Select_a_Product"]</option>';
+                        if (response.length > 0) {
+                            $.each(response, function (index, product) {
+                                options += '<option value="' + product.id + '">' + product.name + '</option>';
+                            });
+                            $('#ProductId').html(options);
+                            $('#ProductId').val('@Model.ProductId');
+                        } else {
+                            options += '<option value="">@localizer["NoProductsAvailable"]</option>';
+                            $('#ProductId').html(options);
+                        }
+                    },
+                    error: function (error) {
+                        console.log(error);
+                    }
+                });
+            } else {
+                var options = '<option value="">@localizer["Select_a_Product"]</option>';
+                $('#ProductId').html(options);
+            }
+
+            $('#CompanyId').change(function () {
+                var companyId = $(this).val();
+                if (companyId) {
+                    $.ajax({
+                        url: '/Promotion/GetProductsByCompanyId',
+                        type: 'GET',
+                        data: { companyId: companyId },
+                        success: function (response) {
+                            var options = '<option value="">@localizer["Select_a_Product"]</option>';
+                            if (response.length > 0) {
+                                $.each(response, function (index, product) {
+                                    options += '<option value="' + product.id + '">' + product.name + '</option>';
+                                });
+                                $('#ProductId').html(options);
+                                $('#ProductId').prop('disabled', false);
+                            } else {
+                                options += '<option value="">@localizer["NoProductsAvailable"]</option>';
+                                $('#ProductId').html(options);
+                                $('#ProductId').prop('disabled', true);
+                            }
+                        },
+                        error: function (error) {
+                            console.log(error);
+                        }
+                    });
+                }
+                else {
+                    var options = '<option value="">@localizer["Select_a_Product"]</option>';
+                    $('#ProductId').html(options);
+                    $('#ProductId').prop('disabled', true);
+                }
+            });
+        });
+    </script>
+}

@@ -1,0 +1,165 @@
+﻿@model IPagedList<BaSalesManagementApp.MVC.Models.CompanyVMs.CompanyListVM>
+@using Microsoft.Extensions.Localization
+@using X.PagedList.Mvc.Common
+@using X.PagedList.Mvc.Core
+@using X.PagedList
+@using X.PagedList.Mvc.Core.Common
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Resource> localizer
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@localizer["CompanyIndex"]</title>
+    <!-- Stil dosyalarınızı buraya ekleyin -->
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="container-xxl flex-grow-1 container-p-y">
+            <h4 class="py-3 mb-4"><span class="text-muted fw-light">@localizer["Company"] /</span> @localizer["List"]</h4>
+            <div class="d-flex justify-content-between mb-2">
+                <a asp-action="Create" class="btn btn-primary">@localizer["Create_New"]</a>
+                <div class="dropdown ms-auto">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                        <i class="bi bi-filter" style="font-size: 1rem;"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a asp-action="Index" asp-route-sortOrder="name_asc"
+                           class="dropdown-item @(ViewBag.CurrentSort == "name_asc" ? "active" : "")">
+                            A-Z
+                        </a>
+                        <a asp-action="Index" asp-route-sortOrder="name_desc"
+                           class="dropdown-item @(ViewBag.CurrentSort == "name_desc" ? "active" : "")">
+                            Z-A
+                        </a>
+                        <a asp-action="Index" asp-route-sortOrder="date_desc"
+                           class="dropdown-item @(ViewBag.CurrentSort == "date_desc" ? "active" : "")">
+                            @localizer["Newest_First"]
+                        </a>
+                        <a asp-action="Index" asp-route-sortOrder="date_asc"
+                           class="dropdown-item @(ViewBag.CurrentSort == "date_asc" ? "active" : "")">
+                            @localizer["Oldest_First"]
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="table-responsive text-nowrap">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>@localizer["Name"]</th>
+                                <th>@localizer["Address"]</th>
+                                <th>@localizer["Phone"]</th>
+                                <th>@localizer["CreatedDate"]</th>
+                                <th class="text-end">@localizer["Actions"]</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-border-bottom-0">
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td class="fw-medium">@Html.DisplayFor(modelItem => item.Name)</td>
+                                    <td class="fw-medium">@Html.DisplayFor(modelItem => item.Address)</td>
+                                    <td class="fw-medium">@Html.DisplayFor(modelItem => item.Phone)</td>
+                                    <td class="fw-medium">@Html.DisplayFor(modelItem => item.CreatedDate)</td>
+                                    <td class="text-end">
+                                        <div class="dropdown">
+                                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown" style="margin-right: 28px;">
+                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a asp-action="Details" asp-route-companyId="@item.Id" class="dropdown-item">
+                                                    <i class="bx bx-info-circle me-1"></i> @localizer["Details"]
+                                                </a>
+                                                <a asp-action="Update" asp-route-companyId="@item.Id" class="dropdown-item">
+                                                    <i class="bx bx-edit-alt me-1"></i> @localizer["Update"]
+                                                </a>
+                                                <a href="javascript:;" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#deleteModal" data-company-id="@item.Id"><i class="bx bx-trash me-1"></i>@localizer["Delete"]</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="d-flex justify-content-center mt-3">
+                    @Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort }), new PagedListRenderOptions
+               {
+                   Display = PagedListDisplayMode.Always,
+                   UlElementClasses = new[] { "pagination", "justify-content-center" },
+                   LiElementClasses = new[] { "page-item" },
+                   PageClasses = new[] { "page-link" },
+                   LinkToPreviousPageFormat = @localizer["Previous"],
+                   LinkToNextPageFormat = @localizer["Next"],
+                   LinkToFirstPageFormat = @localizer["First"],
+                   LinkToLastPageFormat = @localizer["Last"],
+                   ContainerDivClasses = new[] { "d-flex", "justify-content-center" }
+               })
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteModalLabel">@localizer["DELETE_CONFIRM_TITLE_COMPANY"]</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="deleteModalMessage">@localizer["DELETE_CONFIRM_COMPANY"]</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">@localizer["CANCEL_COMPANY"]</button>
+                    <a id="confirmDeleteButton" href="#" class="btn btn-danger">@localizer["DELETE_COMPANY"]</a>
+                    <a id="confirmPassiveButton" href="#" class="btn btn-warning" style="display:none;">@localizer["PASSIVE_COMPANY"]</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts {
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var deleteModal = document.getElementById('deleteModal');
+                deleteModal.addEventListener('show.bs.modal', async function (event) {
+                    var button = event.relatedTarget;
+                    var companyId = button.getAttribute('data-company-id');
+                    var confirmDeleteButton = deleteModal.querySelector('#confirmDeleteButton');
+                    var confirmPassiveButton = deleteModal.querySelector('#confirmPassiveButton');
+                    var deleteModalMessage = deleteModal.querySelector('#deleteModalMessage');
+
+                    // Türkçe karakterlerin düzgün çalışması için escape yapıyoruz
+                    var companyCannotDeleteMessage = decodeURIComponent("@Uri.EscapeDataString(localizer["COMPANY_CANNOT_DELETE_IS_IN_ORDER"])");
+                    var deleteConfirmMessage = decodeURIComponent("@Uri.EscapeDataString(localizer["DELETE_CONFIRM_COMPANY"])");
+
+                   
+                    const response = await fetch('/Company/CheckCompanyInOrder?companyId=' + companyId);
+                    const data = await response.json();
+
+                    if (data.isInOrder) {
+                        deleteModalMessage.textContent = companyCannotDeleteMessage;
+                        confirmDeleteButton.style.display = 'none';
+                        confirmPassiveButton.style.display = 'inline-block';
+                        confirmPassiveButton.href = '/Company/Delete?companyId=' + companyId;
+                    } else {
+                        deleteModalMessage.textContent = deleteConfirmMessage;
+                        confirmDeleteButton.style.display = 'inline-block';
+                        confirmPassiveButton.style.display = 'none';
+                        confirmDeleteButton.href = '/Company/Delete?companyId=' + companyId;
+                    }
+                });
+            });
+        </script>
+    }
+</body>
+</html>

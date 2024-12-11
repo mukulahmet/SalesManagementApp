@@ -1,0 +1,103 @@
+﻿@model MyProfileVM
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Resource> localizer
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@localizer["My_Profile"]</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Özel CSS -->
+    <link href="/assets/myProfile/myprofile.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="profileModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="profileModalLabel">@localizer["Edit_Profile"]</h5>
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="profileForm" asp-action="MyProfile" asp-controller="Account" method="post" enctype="multipart/form-data">
+                        <input type="hidden" asp-for="Id" />
+                        <input type="hidden" id="removePhotoInput" name="RemovePhoto" value="false" />
+
+                        <div class="form-group profile-image-container">
+                            @if (Model.PhotoData != null)
+                            {
+                                <img id="profileImage" src="data:image/jpeg;base64,@Convert.ToBase64String(Model.PhotoData)" alt="@localizer["Profile_Photo"]" class="rounded" />
+                                <button type="button" class="btn btn-link remove-photo-button" onclick="removePhoto()">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                            }
+                            else
+                            {
+                                <img id="profileImage" src="/assets/img/ProfilePhotos/photo.jpg" alt="@localizer["Default_Profile_Photo"]" class="rounded" />
+                                <button type="button" class="btn btn-link remove-photo-button" onclick="removePhoto()">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                            }
+
+                            <label for="photoInput" class="edit-photo-label">
+                                <i class="bi bi-pencil-fill"></i>
+                            </label>
+
+                            <input type="file" id="photoInput" name="Photo" style="display: none;" />
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="FirstName">@localizer["FirstName"]</label>
+                            <input asp-for="FirstName" id="FirstName" class="form-control" />
+                            <span asp-validation-for="FirstName" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="FirstName">@localizer["LastName"]</label>
+                            <input asp-for="LastName" id="LastName" class="form-control" />
+                            <span asp-validation-for="LastName" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Email">@localizer["Email"]</label>
+                            <input asp-for="Email" id="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="button" class="btn btn-warning" id="changePasswordBtn">@localizer["ChangeMyPassword"]</button>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary" id="saveChanges">@localizer["Save"]</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">@localizer["Close"]</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="/assets/myProfile/myprofile.js"></script>
+
+    <script>
+        document.getElementById('changePasswordBtn').addEventListener('click', function () {
+            window.location.href = '@Url.Action("ChangeMyPassword", "Account")'; // ChangeMyPassword eylemine yönlendirin
+        });
+    </script>
+</body>
+</html>

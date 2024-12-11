@@ -1,0 +1,1848 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Product_Name" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="AboutUs" xml:space="preserve">
+    <value>About Us</value>
+  </data>
+  <data name="AccessDeniedMessage" xml:space="preserve">
+    <value>You do not have permission to access this page.</value>
+  </data>
+  <data name="AccessDeniedTitle" xml:space="preserve">
+    <value>Access Denied</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Added_By" xml:space="preserve">
+    <value>Added By</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="Admin_Index" xml:space="preserve">
+    <value>Admin Index</value>
+  </data>
+  <data name="AdminName" xml:space="preserve">
+    <value>Admin Name</value>
+  </data>
+  <data name="Admins" xml:space="preserve">
+    <value>Admins</value>
+  </data>
+  <data name="Age" xml:space="preserve">
+    <value>Age</value>
+  </data>
+  <data name="Analytics" xml:space="preserve">
+    <value>Analytics</value>
+  </data>
+  <data name="BackToList" xml:space="preserve">
+    <value>Back to List</value>
+  </data>
+  <data name="BackToPreviousPage" xml:space="preserve">
+    <value>Click to go back to the previous page</value>
+  </data>
+  <data name="Basic" xml:space="preserve">
+    <value>Basic</value>
+  </data>
+  <data name="BilgeAdamAcademy" xml:space="preserve">
+    <value>Bilge Adam Academy</value>
+  </data>
+  <data name="BilgeAdamTechnology" xml:space="preserve">
+    <value>Bilge Adam Technology</value>
+  </data>
+  <data name="Branch" xml:space="preserve">
+    <value>Branch</value>
+  </data>
+  <data name="Branch_Details" xml:space="preserve">
+    <value>Branch Details</value>
+  </data>
+  <data name="BranchIndex" xml:space="preserve">
+    <value>Branch Index</value>
+  </data>
+  <data name="BranchName" xml:space="preserve">
+    <value>Branch Name</value>
+  </data>
+  <data name="building_Web_apps_with_ASP.NET_Core" xml:space="preserve">
+    <value>building Web apps with ASP.NET Core</value>
+  </data>
+  <data name="CANCEL_ADMIN" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CANCEL_BRANCH" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CANCEL_CATEGORY" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CANCEL_CITY" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CANCEL_COMPANY" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CANCEL_COUNTRY" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CANCEL_CUSTOMER" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CANCEL_EMPLOYEE" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CANCEL_ORDER" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CANCEL_PRODUCT" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CANCEL_PRODUCT_TYPE" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CANCEL_PROMOTION" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CANCEL_STOCK" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CANCEL_STOCK_TYPE_SIZE" xml:space="preserve">
+    <value>Cancel Stock Type Size</value>
+  </data>
+  <data name="CANCEL_WAREHOUSE" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="CategoryDetails" xml:space="preserve">
+    <value>Category Details</value>
+  </data>
+  <data name="CategoryIndex" xml:space="preserve">
+    <value>Category Index</value>
+  </data>
+  <data name="CategoryName" xml:space="preserve">
+    <value>Category Name</value>
+  </data>
+  <data name="Change_Your_Password" xml:space="preserve">
+    <value>Change Your Password</value>
+  </data>
+  <data name="ChangeMyPassword" xml:space="preserve">
+    <value>Change My Password</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="ChangePasswordButton" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="CompanyAdress" xml:space="preserve">
+    <value>Company Adress</value>
+  </data>
+  <data name="CompanyDetails" xml:space="preserve">
+    <value>Company Details</value>
+  </data>
+  <data name="CompanyIndex" xml:space="preserve">
+    <value>Company Index</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="CompanyPhone" xml:space="preserve">
+    <value>Company Phone</value>
+  </data>
+  <data name="ConfirmNewPassword" xml:space="preserve">
+    <value>Confirm New Password</value>
+  </data>
+  <data name="ConfirmNewPasswordPlaceholder" xml:space="preserve">
+    <value>Confirm your new password</value>
+  </data>
+  <data name="ContactAdmin" xml:space="preserve">
+    <value>Please contact the system administrator for necessary permissions.</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="CountryDetails" xml:space="preserve">
+    <value>Country Details</value>
+  </data>
+  <data name="CountryIndex" xml:space="preserve">
+    <value>Country Index</value>
+  </data>
+  <data name="CountryName" xml:space="preserve">
+    <value>Country Name</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="Create_Employee" xml:space="preserve">
+    <value>Create Employee</value>
+  </data>
+  <data name="Create_New" xml:space="preserve">
+    <value>Create New</value>
+  </data>
+  <data name="CreateAdmin" xml:space="preserve">
+    <value>Create Admin</value>
+  </data>
+  <data name="CreatedDate" xml:space="preserve">
+    <value>Created Date</value>
+  </data>
+  <data name="CurrentPassword" xml:space="preserve">
+    <value>Current Password</value>
+  </data>
+  <data name="CurrentPasswordPlaceholder" xml:space="preserve">
+    <value>Enter your current password</value>
+  </data>
+  <data name="Customer" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="Dashboards" xml:space="preserve">
+    <value>Dashboards</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Default_Profile_Photo" xml:space="preserve">
+    <value>Default Profile Photo</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DELETE_ADMIN" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DELETE_BRANCH" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DELETE_CATEGORY" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DELETE_CITY" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DELETE_COMPANY" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DELETE_CONFIRM_ADMIN" xml:space="preserve">
+    <value>Are you sure you want to delete this admin?</value>
+  </data>
+  <data name="DELETE_CONFIRM_BRANCH" xml:space="preserve">
+    <value>Are you sure you want to delete this branch?</value>
+  </data>
+  <data name="DELETE_CONFIRM_CATEGORY" xml:space="preserve">
+    <value>Are you sure you want to delete this category?</value>
+  </data>
+  <data name="DELETE_CONFIRM_CITY" xml:space="preserve">
+    <value>Are you sure want to delete this city?</value>
+  </data>
+  <data name="DELETE_CONFIRM_COMPANY" xml:space="preserve">
+    <value>Are you sure you want to delete this company?</value>
+  </data>
+  <data name="DELETE_CONFIRM_COUNTRY" xml:space="preserve">
+    <value>Are you sure you want to delete this country?</value>
+  </data>
+  <data name="DELETE_CONFIRM_CUSTOMER" xml:space="preserve">
+    <value>Are you sure you want to delete this customer?</value>
+  </data>
+  <data name="DELETE_CONFIRM_EMPLOYEE" xml:space="preserve">
+    <value>Are you sure you want to delete this employee?</value>
+  </data>
+  <data name="DELETE_CONFIRM_ORDER" xml:space="preserve">
+    <value>Are you sure you want to delete this order?</value>
+  </data>
+  <data name="DELETE_CONFIRM_PRODUCT" xml:space="preserve">
+    <value>Are you sure you want to delete this product?</value>
+  </data>
+  <data name="DELETE_CONFIRM_PRODUCT_TYPE" xml:space="preserve">
+    <value>Are you sure you want to delete this product type?</value>
+  </data>
+  <data name="DELETE_CONFIRM_PROMOTION" xml:space="preserve">
+    <value>Are you sure you want to delete this promotion?</value>
+  </data>
+  <data name="DELETE_CONFIRM_STOCK" xml:space="preserve">
+    <value>Are you sure you want to delete this stock?</value>
+  </data>
+  <data name="DELETE_CONFIRM_STOCK_TYPE_SIZE" xml:space="preserve">
+    <value>Are you sure you want to delete this stock type size?</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_ADMIN" xml:space="preserve">
+    <value>Delete Admin</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_BRANCH" xml:space="preserve">
+    <value>Delete Branch</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_CATEGORY" xml:space="preserve">
+    <value>Delete Category</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_CITY" xml:space="preserve">
+    <value>Delete City</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_COMPANY" xml:space="preserve">
+    <value>Delete Company</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_COUNTRY" xml:space="preserve">
+    <value>Delete Country</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_CUSTOMER" xml:space="preserve">
+    <value>Delete Customer</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_EMPLOYEE" xml:space="preserve">
+    <value>Delete Employee</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_ORDER" xml:space="preserve">
+    <value>Delete Order</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_PRODUCT" xml:space="preserve">
+    <value>Delete Product</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_PRODUCT_TYPE" xml:space="preserve">
+    <value>Delete Product Type</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_PROMOTION" xml:space="preserve">
+    <value>Delete Promotion</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_STOCK" xml:space="preserve">
+    <value>Delete Stock</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_STOCK_TYPE_SIZE" xml:space="preserve">
+    <value>Delete Stock Type Size</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_WAREHOUSE" xml:space="preserve">
+    <value>Delete Warehouse</value>
+  </data>
+  <data name="DELETE_CONFIRM_WAREHOUSE" xml:space="preserve">
+    <value>Are you sure you want to delete this warehouse?</value>
+  </data>
+  <data name="DELETE_COUNTRY" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DELETE_CUSTOMER" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DELETE_EMPLOYEE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DELETE_ORDER" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DELETE_PRODUCT_TYPE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DELETE_PROMOTION" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DELETE_STOCK" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DELETE_STOCK_TYPE_SIZE" xml:space="preserve">
+    <value>Delete Stock Type Size</value>
+  </data>
+  <data name="DELETE_WAREHOUSE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="disabledselected" xml:space="preserve">
+    <value>Disabled Selected</value>
+  </data>
+  <data name="Discount" xml:space="preserve">
+    <value>Discount</value>
+  </data>
+  <data name="Edit_Profile" xml:space="preserve">
+    <value>Edit Profile</value>
+  </data>
+  <data name="EducationSolutions" xml:space="preserve">
+    <value>Education Solutions</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="EmployeeDetails" xml:space="preserve">
+    <value>Employee Details</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>End Date</value>
+  </data>
+  <data name="Enter_your_Email" xml:space="preserve">
+    <value>Enter your Email</value>
+  </data>
+  <data name="Error_Page" xml:space="preserve">
+    <value>Error Page</value>
+  </data>
+  <data name="First" xml:space="preserve">
+    <value>First</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="HomePage" xml:space="preserve">
+    <value>Home Page</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="Index" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="IsActive" xml:space="preserve">
+    <value>Is Active</value>
+  </data>
+  <data name="Languages" xml:space="preserve">
+    <value>Languages</value>
+  </data>
+  <data name="Last" xml:space="preserve">
+    <value>Last</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="Learn_About" xml:space="preserve">
+    <value>Learn About</value>
+  </data>
+  <data name="License" xml:space="preserve">
+    <value>License</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="Log_Out" xml:space="preserve">
+    <value>Log Out</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="made_with" xml:space="preserve">
+    <value>Made with </value>
+  </data>
+  <data name="Management" xml:space="preserve">
+    <value>Management</value>
+  </data>
+  <data name="My_Profile" xml:space="preserve">
+    <value>My Profile</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Customer Name</value>
+  </data>
+  <data name="Newest_First" xml:space="preserve">
+    <value>Newest First</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>New Password</value>
+  </data>
+  <data name="NewPasswordPlaceholder" xml:space="preserve">
+    <value>Enter your new password</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="NoCompanyFound" xml:space="preserve">
+    <value>No Company Found</value>
+  </data>
+  <data name="NoProductsAvailable" xml:space="preserve">
+    <value>No Products Available</value>
+  </data>
+  <data name="Oldest_First" xml:space="preserve">
+    <value>Oldest First</value>
+  </data>
+  <data name="Operations" xml:space="preserve">
+    <value>Operations</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="OrderDate" xml:space="preserve">
+    <value>Order Date</value>
+  </data>
+  <data name="OrderDetails" xml:space="preserve">
+    <value>Order Details</value>
+  </data>
+  <data name="OrderIndex" xml:space="preserve">
+    <value>Order Index</value>
+  </data>
+  <data name="PAGES" xml:space="preserve">
+    <value>PAGES</value>
+  </data>
+  <data name="Pagess" xml:space="preserve">
+    <value>Pages</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PasswordRequirementLength" xml:space="preserve">
+    <value>At least 8 characters</value>
+  </data>
+  <data name="PasswordRequirementNumber" xml:space="preserve">
+    <value>At least one number</value>
+  </data>
+  <data name="PasswordRequirementSpecial" xml:space="preserve">
+    <value>At least one special character</value>
+  </data>
+  <data name="PasswordRequirementUppercase" xml:space="preserve">
+    <value>At least one uppercase letter</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="Photo" xml:space="preserve">
+    <value>Photo</value>
+  </data>
+  <data name="PleaseChooseCompanyFirst" xml:space="preserve">
+    <value>Please Choose Company First</value>
+  </data>
+  <data name="Population" xml:space="preserve">
+    <value>Population</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="Pro" xml:space="preserve">
+    <value>Pro</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="ProductType" xml:space="preserve">
+    <value>Product Type</value>
+  </data>
+  <data name="ProductTypeDetails" xml:space="preserve">
+    <value>Product Type Details</value>
+  </data>
+  <data name="ProductTypeList" xml:space="preserve">
+    <value>Product Type List</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="Profile_Photo" xml:space="preserve">
+    <value>Profile Photo</value>
+  </data>
+  <data name="Promotion" xml:space="preserve">
+    <value>Promotion</value>
+  </data>
+  <data name="Promotion_Index" xml:space="preserve">
+    <value>Promotion Index</value>
+  </data>
+  <data name="PromotionDetails" xml:space="preserve">
+    <value>Promotion Details</value>
+  </data>
+  <data name="QRCode" xml:space="preserve">
+    <value>QR Code</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="Sales" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="Sales_Management" xml:space="preserve">
+    <value>Sales Management</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Search..." xml:space="preserve">
+    <value>Search...</value>
+  </data>
+  <data name="Select_a_Product" xml:space="preserve">
+    <value>Select a Product</value>
+  </data>
+  <data name="Select_Company" xml:space="preserve">
+    <value>Select Company</value>
+  </data>
+  <data name="SelectBranch" xml:space="preserve">
+    <value>Select Branch</value>
+  </data>
+  <data name="SelectCompany" xml:space="preserve">
+    <value>Select Company</value>
+  </data>
+  <data name="SelectCountry" xml:space="preserve">
+    <value>Select Country</value>
+  </data>
+  <data name="Server_Error_(500)" xml:space="preserve">
+    <value>Server Error (500)</value>
+  </data>
+  <data name="ServerErrorMessage" xml:space="preserve">
+    <value>An error occurred</value>
+  </data>
+  <data name="Sign_in" xml:space="preserve">
+    <value>Sign in</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="Stock" xml:space="preserve">
+    <value>Stock</value>
+  </data>
+  <data name="Stock_Index" xml:space="preserve">
+    <value>Stock Index</value>
+  </data>
+  <data name="StockTypeSize" xml:space="preserve">
+    <value>Stock Type Size</value>
+  </data>
+  <data name="StockTypeSize Index" xml:space="preserve">
+    <value>Stock Type Size Index</value>
+  </data>
+  <data name="StudentCreateVM" xml:space="preserve">
+    <value>Student CreateVM</value>
+  </data>
+  <data name="Support" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="Template" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="TotalPrice" xml:space="preserve">
+    <value>Total Price</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="Use_this_page_to_detail_your_site's_privacy_policy." xml:space="preserve">
+    <value>Use this page to detail your site's privacy policy.</value>
+  </data>
+  <data name="User_Photo" xml:space="preserve">
+    <value>User Photo</value>
+  </data>
+  <data name="Warehouse" xml:space="preserve">
+    <value>Warehouse</value>
+  </data>
+  <data name="Warehouse_Index" xml:space="preserve">
+    <value>Warehouse Index</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="Welcome_to_Sales_Management" xml:space="preserve">
+    <value>Welcome to Sales Management</value>
+  </data>
+  <data name="WelcomeMessage" xml:space="preserve">
+    <value>Welcome to Sales Management</value>
+  </data>
+  <data name="EMPLOYEE_ADD_ERROR" xml:space="preserve">
+    <value>An error occurred while adding an employee.</value>
+  </data>
+  <data name="EMPLOYEE_ADD_SUCCESS" xml:space="preserve">
+    <value>The employee has been added successfully.</value>
+  </data>
+  <data name="EMPLOYEE_DELETE_ERROR" xml:space="preserve">
+    <value>An error occurred while deleting a worker.</value>
+  </data>
+  <data name="EMPLOYEE_DELETE_SUCCESS" xml:space="preserve">
+    <value>The employee has been deleted successfully.</value>
+  </data>
+  <data name="EMPLOYEE_EMAIL_IN_USE" xml:space="preserve">
+    <value>This email address is already in use.</value>
+  </data>
+  <data name="EMPLOYEE_E_MAIL_FIELD_IS_REQUIRED" xml:space="preserve">
+    <value>Email field is required.</value>
+  </data>
+  <data name="EMPLOYEE_GETBYID_ERROR" xml:space="preserve">
+    <value>No employee found.</value>
+  </data>
+  <data name="EMPLOYEE_LISTED_ERROR" xml:space="preserve">
+    <value>An error occurred while listing employees.</value>
+  </data>
+  <data name="EMPLOYEE_LISTED_NOTFOUND" xml:space="preserve">
+    <value>No employees were found.</value>
+  </data>
+  <data name="EMPLOYEE_LISTED_SUCCESS" xml:space="preserve">
+    <value>Employees have been listed successfully.</value>
+  </data>
+  <data name="EMPLOYEE_NAMESPACE_IS_REQUIRED" xml:space="preserve">
+    <value>Name field is required.</value>
+  </data>
+  <data name="EMPLOYEE_NAME_MAX_LENGTH_ERROR" xml:space="preserve">
+    <value>The name cannot be longer than 50 characters.</value>
+  </data>
+  <data name="EMPLOYEE_NAME_MIN_LENGTH_ERROR" xml:space="preserve">
+    <value>The name cannot be less than 2 characters.</value>
+  </data>
+  <data name="EMPLOYEE_NAME_NUMERIC_FORBIDDEN" xml:space="preserve">
+    <value>Numeric characters cannot be used in the name.</value>
+  </data>
+  <data name="EMPLOYEE_PHOTO_SIZE_EXCEEDS_LIMIT" xml:space="preserve">
+    <value>Photo size cannot exceed 500 KB.</value>
+  </data>
+  <data name="EMPLOYEE_SURNAME_FIELD_IS_REQUIRED" xml:space="preserve">
+    <value>The Surname field is required.</value>
+  </data>
+  <data name="EMPLOYEE_SURNAME_MAX_LENGTH_ERROR" xml:space="preserve">
+    <value>Surname cannot be longer than 50 characters.</value>
+  </data>
+  <data name="EMPLOYEE_SURNAME_MIN_LENGTH_ERROR" xml:space="preserve">
+    <value>Surname cannot be less than 2 characters.</value>
+  </data>
+  <data name="EMPLOYEE_SURNAME_NUMERIC_FORBIDDEN" xml:space="preserve">
+    <value>Numeric characters cannot be used in the surname.</value>
+  </data>
+  <data name="EMPLOYEE_UPDATE_ERROR" xml:space="preserve">
+    <value>An error occurred while the update was running.</value>
+  </data>
+  <data name="EMPLOYEE_UPDATE_SUCCESS" xml:space="preserve">
+    <value>The employee has been updated successfully.</value>
+  </data>
+  <data name="EMPLOYEE_VALID_EMAIL_REQUIRED" xml:space="preserve">
+    <value>You entered an invalid email. For example: (orn@domainname.com)</value>
+  </data>
+  <data name="ACCOUNT_NOT_FOUND" xml:space="preserve">
+    <value>Email address or password is in correct !</value>
+  </data>
+  <data name="ACCOUNT_ROLE_NOT_FOUND_FOR_USER" xml:space="preserve">
+    <value>Role was not found for user !</value>
+  </data>
+  <data name="PLEASE_ENTER_YOUR_EMAIL" xml:space="preserve">
+    <value>Please enter your email address</value>
+  </data>
+  <data name="PLEASE_ENTER_YOUR_EMAIL_WITH_CORRECT_FORMAT" xml:space="preserve">
+    <value>Please enter your email with correct format </value>
+  </data>
+  <data name="PLEASE_ENTER_YOUR_PASSWORD" xml:space="preserve">
+    <value>Please enter your password</value>
+  </data>
+  <data name="COMPANY_ADDRESS_MAXIMUM_LENGTH" xml:space="preserve">
+    <value>More than 128 characters cannot be entered in the company address</value>
+  </data>
+  <data name="COMPANY_ADDRESS_MINIMUM_LENGTH" xml:space="preserve">
+    <value>At least 2 characters must be entered in the company address</value>
+  </data>
+  <data name="COMPANY_ADDRESS_NOT_EMPTY" xml:space="preserve">
+    <value>Company address cannot be null</value>
+  </data>
+  <data name="COMPANY_ADD_ERROR" xml:space="preserve">
+    <value>Company Could Not Be Added</value>
+  </data>
+  <data name="COMPANY_ADD_SUCCESS" xml:space="preserve">
+    <value>Company Has Been Added Successfully</value>
+  </data>
+  <data name="COMPANY_DELETE_ERROR" xml:space="preserve">
+    <value>Company Could Not Be Deleted</value>
+  </data>
+  <data name="COMPANY_DELETE_SUCCESS" xml:space="preserve">
+    <value>Company Has Been Deleted Successfully</value>
+  </data>
+  <data name="COMPANY_GETBYID_ERROR" xml:space="preserve">
+    <value>Failed to Bring Company</value>
+  </data>
+  <data name="COMPANY_GETBYID_SUCCESS" xml:space="preserve">
+    <value>Company Has Been Brought Successfully</value>
+  </data>
+  <data name="COMPANY_LISTED_ERROR" xml:space="preserve">
+    <value>Company Not Listed</value>
+  </data>
+  <data name="COMPANY_LISTED_NOTFOUND" xml:space="preserve">
+    <value>Company Not Found</value>
+  </data>
+  <data name="COMPANY_LISTED_SUCCESS" xml:space="preserve">
+    <value>Company Has Been Listed Successfully</value>
+  </data>
+  <data name="COMPANY_MATCHES" xml:space="preserve">
+    <value>Invalid company phone</value>
+  </data>
+  <data name="COMPANY_NAME_MAXIMUM_LENGTH" xml:space="preserve">
+    <value>More than 128 characters cannot be entered in the company name</value>
+  </data>
+  <data name="COMPANY_NAME_MINIMUM_LENGTH" xml:space="preserve">
+    <value>At least 2 characters must be entered in the company name</value>
+  </data>
+  <data name="COMPANY_NAME_NOT_EMPTY" xml:space="preserve">
+    <value>Company name cannot be null.</value>
+  </data>
+  <data name="COMPANY_PHONE_MAXIMUM_LENGTH" xml:space="preserve">
+    <value>More than 40 numbers cannot be entered in the company phone</value>
+  </data>
+  <data name="COMPANY_PHONE_MINIMUM_LENGTH" xml:space="preserve">
+    <value>At least 10 characters must be entered in the company phone</value>
+  </data>
+  <data name="COMPANY_PHONE_NOT_EMPTY" xml:space="preserve">
+    <value>Company phone cannot be null</value>
+  </data>
+  <data name="COMPANY_UPDATE_ERROR" xml:space="preserve">
+    <value>Company Could Not Be Updated</value>
+  </data>
+  <data name="COMPANY_UPDATE_SUCCESS" xml:space="preserve">
+    <value>Company Has Been Updated Successfully</value>
+  </data>
+  <data name="ORDER_CREATED_SUCCESS" xml:space="preserve">
+    <value>The order has been created successfully.</value>
+  </data>
+  <data name="ORDER_CREATE_FAILED" xml:space="preserve">
+    <value>An error occurred while creating the order.</value>
+  </data>
+  <data name="ORDER_DATE_VALIDATION" xml:space="preserve">
+    <value>Date cannot be earlier than today.</value>
+  </data>
+  <data name="ORDER_DELETED_SUCCESS" xml:space="preserve">
+    <value>The order has been deleted successfully.</value>
+  </data>
+  <data name="ORDER_DELETE_FAILED" xml:space="preserve">
+    <value>An error occurred while deleting the order.</value>
+  </data>
+  <data name="ORDER_EMPTY_VALIDATION" xml:space="preserve">
+    <value>This field cannot be empty.</value>
+  </data>
+  <data name="ORDER_FOUND_SUCCESS" xml:space="preserve">
+    <value>The order was found successfully.</value>
+  </data>
+  <data name="ORDER_GET_FAILED" xml:space="preserve">
+    <value>An error occurred while retrieving order data.</value>
+  </data>
+  <data name="ORDER_LISTED_SUCCESS" xml:space="preserve">
+    <value>Orders have been listed successfully.</value>
+  </data>
+  <data name="ORDER_LIST_EMPTY" xml:space="preserve">
+    <value>Order list is empty.</value>
+  </data>
+  <data name="ORDER_LIST_FAILED" xml:space="preserve">
+    <value>An error occurred while listing orders.</value>
+  </data>
+  <data name="ORDER_NOT_FOUND" xml:space="preserve">
+    <value>Order not found.</value>
+  </data>
+  <data name="ORDER_PRECISION_VALIDATION" xml:space="preserve">
+    <value>Total price must be up to 18 digits with 2 decimal places.</value>
+  </data>
+  <data name="ORDER_QUANTITY_VALIDATION" xml:space="preserve">
+    <value>Order quantity must be at least 1.</value>
+  </data>
+  <data name="ORDER_TOTALPRICE_VALIDATION" xml:space="preserve">
+    <value>The total price must be greater than zero.</value>
+  </data>
+  <data name="ORDER_UPDATE_FAILED" xml:space="preserve">
+    <value>Order update failed.</value>
+  </data>
+  <data name="ORDER_UPDATE_SUCCES" xml:space="preserve">
+    <value>Order update successful.</value>
+  </data>
+  <data name="ORDER_WHOLE_NUMBER_VALIDATION" xml:space="preserve">
+    <value>Quantity must be a whole number.</value>
+  </data>
+  <data name="CUSTOMER_ADD_ERROR" xml:space="preserve">
+    <value>Customer Could Not Be Added.</value>
+  </data>
+  <data name="CUSTOMER_ADD_SUCCESS" xml:space="preserve">
+    <value>Customer Has Been Added Successfully.</value>
+  </data>
+  <data name="CUSTOMER_DELETE_ERROR" xml:space="preserve">
+    <value>Customer Could Not Be Deleted.</value>
+  </data>
+  <data name="CUSTOMER_DELETE_SUCCESS" xml:space="preserve">
+    <value>Customer Has Been Deleted Successfully.</value>
+  </data>
+  <data name="CUSTOMER_FOUND_SUCCESS" xml:space="preserve">
+    <value>Customer Found Successfully.</value>
+  </data>
+  <data name="CUSTOMER_GET_FAILED" xml:space="preserve">
+    <value>Customer Get Failed.</value>
+  </data>
+  <data name="CUSTOMER_LISTED_ERROR" xml:space="preserve">
+    <value>Customer Could Not Be Listed.</value>
+  </data>
+  <data name="CUSTOMER_LISTED_SUCCESS" xml:space="preserve">
+    <value>Customers Has Been Listed Successfully.</value>
+  </data>
+  <data name="CUSTOMER_LIST_EMPTY" xml:space="preserve">
+    <value>Customer List Empty.</value>
+  </data>
+  <data name="CUSTOMER_LIST_FAILED" xml:space="preserve">
+    <value>Customer List Failed.</value>
+  </data>
+  <data name="CUSTOMER_NOT_FOUND" xml:space="preserve">
+    <value>Customer Not Found.</value>
+  </data>
+  <data name="CUSTOMER_UPDATED_FAILED" xml:space="preserve">
+    <value>Customer Update Failed.</value>
+  </data>
+  <data name="CUSTOMER_UPDATED_SUCCESS" xml:space="preserve">
+    <value>Customer Updated Successfully.</value>
+  </data>
+  <data name="STOCK_CREATED_SUCCESS" xml:space="preserve">
+    <value>Stock has been created successfully.</value>
+  </data>
+  <data name="STOCK_CREATE_FAILED" xml:space="preserve">
+    <value>An error occured while creating stock.</value>
+  </data>
+  <data name="STOCK_DELETED_SUCCESS" xml:space="preserve">
+    <value>Stock has been deleted successfully.</value>
+  </data>
+  <data name="STOCK_DELETE_FAILED" xml:space="preserve">
+    <value>An error occurred while deleting stock.</value>
+  </data>
+  <data name="STOCK_EMPTY_VALIDATION" xml:space="preserve">
+    <value>This field cannot be empty.</value>
+  </data>
+  <data name="STOCK_FOUND_SUCCESS" xml:space="preserve">
+    <value>Stock was found successfully.</value>
+  </data>
+  <data name="STOCK_GET_FAILED" xml:space="preserve">
+    <value>An error occurred while retrieving amount of stock.</value>
+  </data>
+  <data name="STOCK_LISTED_SUCCESS" xml:space="preserve">
+    <value>Stocks have been listed successfully.</value>
+  </data>
+  <data name="STOCK_LIST_EMPTY" xml:space="preserve">
+    <value>Stock list is empty.</value>
+  </data>
+  <data name="STOCK_LIST_FAILED" xml:space="preserve">
+    <value>An error occurred while listing stocks.</value>
+  </data>
+  <data name="STOCK_NOT_FOUND" xml:space="preserve">
+    <value>Stock not found.</value>
+  </data>
+  <data name="STOCK_POSITIVE_VALIDATION" xml:space="preserve">
+    <value>Count cannot be less than zero.</value>
+  </data>
+  <data name="STOCK_UPDATE_FAILED" xml:space="preserve">
+    <value>Stock update failed.</value>
+  </data>
+  <data name="STOCK_UPDATE_SUCCESS" xml:space="preserve">
+    <value>Stock update successful.</value>
+  </data>
+  <data name="STOCK_WHOLENUMBER_VALIDATION" xml:space="preserve">
+    <value>Count must be a whole number.</value>
+  </data>
+  <data name="PROMOTION_CREATE_ERROR" xml:space="preserve">
+    <value>An error occurred while creating the promotion.</value>
+  </data>
+  <data name="PROMOTION_CREATE_SUCCESS" xml:space="preserve">
+    <value>The promotion has been created successfully.</value>
+  </data>
+  <data name="PROMOTION_DELETE_ERROR" xml:space="preserve">
+    <value>Promotion Could not Be Deleted.</value>
+  </data>
+  <data name="PROMOTION_DELETE_SUCCESS" xml:space="preserve">
+    <value>Promotion Has Been Deleted Successfully.</value>
+  </data>
+  <data name="PROMOTION_DISCOUNT_GREATER_THAN_ZERO" xml:space="preserve">
+    <value>Promotion discount must be greater than zero.</value>
+  </data>
+  <data name="PROMOTION_DISCOUNT_LESS_THAN_HUNDRED" xml:space="preserve">
+    <value>Promotion discount should be less than 100.</value>
+  </data>
+  <data name="PROMOTION_DISCOUNT_REQUIRED" xml:space="preserve">
+    <value>Promotion discount is required.</value>
+  </data>
+  <data name="PROMOTION_GETBYID_ERROR" xml:space="preserve">
+    <value>An error occurred while retrieving promotion data.</value>
+  </data>
+  <data name="PROMOTION_GETBYID_SUCCESS" xml:space="preserve">
+    <value>The promotion was found successfully.</value>
+  </data>
+  <data name="PROMOTION_LISTED_ERROR" xml:space="preserve">
+    <value>An error occurred while listing promotions</value>
+  </data>
+  <data name="PROMOTION_LISTED_NOTFOUND" xml:space="preserve">
+    <value>Promotion list not found.</value>
+  </data>
+  <data name="PROMOTION_LISTED_SUCCESS" xml:space="preserve">
+    <value>Promotions Has Been Listed Successfully.</value>
+  </data>
+  <data name="PROMOTION_NOT_FOUND" xml:space="preserve">
+    <value>Promotion Not Found.</value>
+  </data>
+  <data name="PROMOTION_PRICE_GREATER_THAN_ZERO" xml:space="preserve">
+    <value>Promotion price must be greater than zero.</value>
+  </data>
+  <data name="PROMOTION_PRICE_REQUIRED" xml:space="preserve">
+    <value>Promotion price is required.</value>
+  </data>
+  <data name="PROMOTION_TOTAL_PRICE_GREATER_THAN_OR_EQUAL_PRICE" xml:space="preserve">
+    <value>Promotion total price should be greater than or equal to the price.</value>
+  </data>
+  <data name="PROMOTION_TOTAL_PRICE_GREATER_THAN_ZERO" xml:space="preserve">
+    <value>Promotion total price must be greater than zero.</value>
+  </data>
+  <data name="PROMOTION_TOTAL_PRICE_REQUIRED" xml:space="preserve">
+    <value>Promotion total price is required.</value>
+  </data>
+  <data name="PROMOTION_UPDATE_ERROR" xml:space="preserve">
+    <value>An error occurred while updating the promotion.</value>
+  </data>
+  <data name="PROMOTION_UPDATE_SUCCESS" xml:space="preserve">
+    <value>The promotion has been successfully updated.</value>
+  </data>
+  <data name="STUDENT_ADDED_SUCCESS" xml:space="preserve">
+    <value>Student Has Been Added Successfully.</value>
+  </data>
+  <data name="STUDENT_BROUGHT_SUCCESS" xml:space="preserve">
+    <value>Student Has Been Brought Successfully.</value>
+  </data>
+  <data name="STUDENT_DELETED_SUCCESS" xml:space="preserve">
+    <value>Student Has Been Deleted Successfully.</value>
+  </data>
+  <data name="STUDENT_LISTED_SUCCESS" xml:space="preserve">
+    <value>Student Has Been Listed Successfully.</value>
+  </data>
+  <data name="Warehouse_CREATED_SUCCESS" xml:space="preserve">
+    <value>The warehouse was successfully created.</value>
+  </data>
+  <data name="Warehouse_CREATE_FAILED" xml:space="preserve">
+    <value>An error occurred while creating the warehouse.</value>
+  </data>
+  <data name="Warehouse_DELETED_SUCCESS" xml:space="preserve">
+    <value>The warehouse was successfully deleted.</value>
+  </data>
+  <data name="Warehouse_DELETE_FAILED" xml:space="preserve">
+    <value>An error occurred while deleting the warehouse.</value>
+  </data>
+  <data name="Warehouse_FOUND_SUCCESS" xml:space="preserve">
+    <value>The warehouse was successfully found.</value>
+  </data>
+  <data name="Warehouse_GET_FAILED" xml:space="preserve">
+    <value>The warehouse could not be retrieved.</value>
+  </data>
+  <data name="Warehouse_LISTED_SUCCESS" xml:space="preserve">
+    <value>The warehouse list was successfully retrieved.</value>
+  </data>
+  <data name="Warehouse_LIST_EMPTY" xml:space="preserve">
+    <value>The warehouse list is empty.</value>
+  </data>
+  <data name="Warehouse_LIST_FAILED" xml:space="preserve">
+    <value>An error occurred while retrieving the warehouse list.</value>
+  </data>
+  <data name="Warehouse_MAX_LENGTH" xml:space="preserve">
+    <value>Cannot exceed 128 characters!</value>
+  </data>
+  <data name="Warehouse_MIN_LENGTH" xml:space="preserve">
+    <value>Must be at least 2 characters long!</value>
+  </data>
+  <data name="Warehouse_NOT_EMPTY" xml:space="preserve">
+    <value>This field cannot be empty!</value>
+  </data>
+  <data name="Warehouse_NOT_FOUND" xml:space="preserve">
+    <value>The warehouse was not found.</value>
+  </data>
+  <data name="Warehouse_UPDATED_SUCCESS" xml:space="preserve">
+    <value>The warehouse was successfully updated.</value>
+  </data>
+  <data name="Warehouse_UPDATE_FAILED" xml:space="preserve">
+    <value>An error occurred while updating the warehouse.</value>
+  </data>
+  <data name="PRODUCTTYPE_ADD_SUCCESS" xml:space="preserve">
+    <value>Product type was added successfully </value>
+  </data>
+  <data name="PRODUCTTYPE_ADD_UNSUCCESS" xml:space="preserve">
+    <value>Product type added process is unsuccess </value>
+  </data>
+  <data name="PRODUCTTYPE_DELETE_SUCCESS" xml:space="preserve">
+    <value>Product type was deleted successfully </value>
+  </data>
+  <data name="PRODUCTTYPE_DELETE_UNSUCCESS" xml:space="preserve">
+    <value>Product type deleted process is unsuccess </value>
+  </data>
+  <data name="PRODUCTTYPE_DESCRIPTION_MAXIMUM_LENGTH" xml:space="preserve">
+    <value>Description field can be entered max 128 characters </value>
+  </data>
+  <data name="PRODUCTTYPE_DESCRIPTION_MINIMUM_LENGTH" xml:space="preserve">
+    <value>Description field can be entered min one character </value>
+  </data>
+  <data name="PRODUCTTYPE_DESCRIPTION_NOT_EMPTY" xml:space="preserve">
+    <value>Description field cannot be empty </value>
+  </data>
+  <data name="PRODUCTTYPE_GETBYID_SUCCESS" xml:space="preserve">
+    <value>Product type was brought successfully </value>
+  </data>
+  <data name="PRODUCTTYPE_GETBYID_UNSUCCESS" xml:space="preserve">
+    <value>Product type fetch process is unsuccess </value>
+  </data>
+  <data name="PRODUCTTYPE_LISTED_NOTFOUND" xml:space="preserve">
+    <value>Product type was not found </value>
+  </data>
+  <data name="PRODUCTTYPE_LISTED_SUCCESS" xml:space="preserve">
+    <value>Product type was listed successfully </value>
+  </data>
+  <data name="PRODUCTTYPE_LISTED_UNSUCCESS" xml:space="preserve">
+    <value>Product type listed process is unsuccess </value>
+  </data>
+  <data name="PRODUCTTYPE_NAME_MAXIMUM_LENGTH" xml:space="preserve">
+    <value>Name field can be entered max 128 characters </value>
+  </data>
+  <data name="PRODUCTTYPE_NAME_MINIMUM_LENGTH" xml:space="preserve">
+    <value>Name field can be entered min one character </value>
+  </data>
+  <data name="PRODUCTTYPE_NAME_NOT_EMPTY" xml:space="preserve">
+    <value>Name field cannot be empty </value>
+  </data>
+  <data name="PRODUCTTYPE_UPDATE_SUCCESS" xml:space="preserve">
+    <value>Product type was updated successfully </value>
+  </data>
+  <data name="PRODUCTTYPE_UPDATE_UNSUCCESS" xml:space="preserve">
+    <value>Product type updated process is unsuccess </value>
+  </data>
+  <data name="PRODUCT_CREATED_ERROR" xml:space="preserve">
+    <value>An Error Occurred while Creating the Product.</value>
+  </data>
+  <data name="PRODUCT_CREATED_SUCCESS" xml:space="preserve">
+    <value>Product Created Successfully.</value>
+  </data>
+  <data name="PRODUCT_DELETED_ERROR" xml:space="preserve">
+    <value>An Error Occurred while Deleting the Product.</value>
+  </data>
+  <data name="PRODUCT_DELETED_SUCCESS" xml:space="preserve">
+    <value>Product Deleted Successfully.</value>
+  </data>
+  <data name="PRODUCT_GET_SUCCESS" xml:space="preserve">
+    <value>The Product list was Successfully Retrieved.</value>
+  </data>
+  <data name="PRODUCT_LISTED_EMPTY" xml:space="preserve">
+    <value>Product List is Empty.</value>
+  </data>
+  <data name="PRODUCT_LISTED_ERROR" xml:space="preserve">
+    <value>An Error Occurred while Listing the Product.</value>
+  </data>
+  <data name="PRODUCT_LISTED_SUCCESS" xml:space="preserve">
+    <value>Product Listed Successfully.</value>
+  </data>
+  <data name="PRODUCT_NAME_CANNOT_BE_EMPTY" xml:space="preserve">
+    <value>This Field Cannot Be Empty!</value>
+  </data>
+  <data name="PRODUCT_NAME_CANNOT_CONTAIN_NUMBER" xml:space="preserve">
+    <value>Name Can Not Contain Number!</value>
+  </data>
+  <data name="PRODUCT_NOT_FOUND" xml:space="preserve">
+    <value>Product Not Found!</value>
+  </data>
+  <data name="PRODUCT_PRICE_CANNOT_BE_EMPTY" xml:space="preserve">
+    <value>This Field Cannot be Empty!</value>
+  </data>
+  <data name="PRODUCT_PRICE_MUST_BE_GREATER_THAN_ZERO" xml:space="preserve">
+    <value>Price Must Be Greater Than Zero!</value>
+  </data>
+  <data name="PRODUCT_PRICE_MUST_HAVE_NO_MORE_THAN_TWO_DECIMAL_PLACES" xml:space="preserve">
+    <value>Price Must be Up To 18 Digits With 2 Decimal Places.</value>
+  </data>
+  <data name="PRODUCT_UPDATED_ERROR" xml:space="preserve">
+    <value>An Error Occurred while Updating the Product.</value>
+  </data>
+  <data name="PRODUCT_UPDATED_SUCCESS" xml:space="preserve">
+    <value>Product Updated Successfully.</value>
+  </data>
+  <data name="CUSTOMER_ADDRESS_MAXIMUM_LENGTH" xml:space="preserve">
+    <value>Cannot exceed 128 characters</value>
+  </data>
+  <data name="CUSTOMER_ADDRESS_MINIMUM_LENGTH" xml:space="preserve">
+    <value>Must be at least 2 characters long</value>
+  </data>
+  <data name="CUSTOMER_ADDRESS_NOT_EMPTY" xml:space="preserve">
+    <value>Customer address cannot be empty.</value>
+  </data>
+  <data name="CUSTOMER_MATCHES" xml:space="preserve">
+    <value>Invalid customer phone</value>
+  </data>
+  <data name="CUSTOMER_NAME_MAXIMUM_LENGTH" xml:space="preserve">
+    <value>Cannot exceed 128 characters</value>
+  </data>
+  <data name="CUSTOMER_NAME_MINIMUM_LENGTH" xml:space="preserve">
+    <value>Must be at least 2 characters long</value>
+  </data>
+  <data name="CUSTOMER_NAME_NOT_EMPTY" xml:space="preserve">
+    <value>Customer name cannot be empty.</value>
+  </data>
+  <data name="CUSTOMER_PHONE_MAXIMUM_LENGTH" xml:space="preserve">
+    <value>Cannot exceed 40 digits</value>
+  </data>
+  <data name="CUSTOMER_PHONE_MINIMUM_LENGTH" xml:space="preserve">
+    <value>Must be at least 10 digits long</value>
+  </data>
+  <data name="CUSTOMER_PHONE_NOT_EMPTY" xml:space="preserve">
+    <value>Customer phone number cannot be empty.</value>
+  </data>
+  <data name="BRANCH_ADDRESS_MAXIMUM_LENGTH" xml:space="preserve">
+    <value>More than 128 characters cannot be entered in the branch address</value>
+  </data>
+  <data name="BRANCH_ADDRESS_MINIMUM_LENGTH" xml:space="preserve">
+    <value>At least 2 characters must be entered in the branch address</value>
+  </data>
+  <data name="BRANCH_ADDRESS_NOT_EMPTY" xml:space="preserve">
+    <value>Branch address cannot be null!</value>
+  </data>
+  <data name="BRANCH_ADD_ERROR" xml:space="preserve">
+    <value>Branch Could Not Be Added!</value>
+  </data>
+  <data name="BRANCH_ADD_SUCCESS" xml:space="preserve">
+    <value>Branch Has Been Added Successfully</value>
+  </data>
+  <data name="BRANCH_DELETE_ERROR" xml:space="preserve">
+    <value>Branch Could Not Be Deleted</value>
+  </data>
+  <data name="BRANCH_DELETE_SUCCESS" xml:space="preserve">
+    <value>Branch Has Been Deleted Successfully</value>
+  </data>
+  <data name="BRANCH_GETBYID_ERROR" xml:space="preserve">
+    <value>Failed to Bring Branch!</value>
+  </data>
+  <data name="BRANCH_GETBYID_SUCCESS" xml:space="preserve">
+    <value>Branch Has Been Brought Successfully</value>
+  </data>
+  <data name="BRANCH_LISTED_ERROR" xml:space="preserve">
+    <value>Branch Not Listed</value>
+  </data>
+  <data name="BRANCH_LISTED_NOTFOUND" xml:space="preserve">
+    <value>Branch Not Found</value>
+  </data>
+  <data name="BRANCH_LISTED_SUCCESS" xml:space="preserve">
+    <value>Branch Has Been Listed Successfully</value>
+  </data>
+  <data name="BRANCH_NAME_MAXIMUM_LENGTH" xml:space="preserve">
+    <value>More than 128 characters cannot be entered in the branch name</value>
+  </data>
+  <data name="BRANCH_NAME_MINIMUM_LENGTH" xml:space="preserve">
+    <value>At least 2 characters must be entered in the branch name</value>
+  </data>
+  <data name="BRANCH_NAME_NOT_EMPTY" xml:space="preserve">
+    <value>Branch name cannot be null</value>
+  </data>
+  <data name="BRANCH_UPDATE_ERROR" xml:space="preserve">
+    <value>Branch Could Not Be Updated</value>
+  </data>
+  <data name="BRANCH_UPDATE_SUCCESS" xml:space="preserve">
+    <value>Branch Has Been Updated Successfully</value>
+  </data>
+  <data name="ADMIN_CREATED_SUCCESS" xml:space="preserve">
+    <value>The admin was successfully created.</value>
+  </data>
+  <data name="ADMIN_CREATE_ERROR" xml:space="preserve">
+    <value>An error occurred while creating the admin.</value>
+  </data>
+  <data name="ADMIN_DELETED_SUCCESS" xml:space="preserve">
+    <value>The admin was successfully deleted.</value>
+  </data>
+  <data name="ADMIN_DELETE_ERROR" xml:space="preserve">
+    <value>An error occurred while deleting the admin.</value>
+  </data>
+  <data name="ADMIN_EMAIL_IN_USE" xml:space="preserve">
+    <value>This e-mail address is already being used.</value>
+  </data>
+  <data name="ADMIN_E_MAIL_FIELD_IS_REQUIRED" xml:space="preserve">
+    <value>The e-mail field is mandatory.</value>
+  </data>
+  <data name="ADMIN_GETBYID_ERROR" xml:space="preserve">
+    <value>The admin could not be found.</value>
+  </data>
+  <data name="ADMIN_LISTED_ERROR" xml:space="preserve">
+    <value>An error occurred while listing the admin.</value>
+  </data>
+  <data name="ADMIN_LISTED_NOTFOUND" xml:space="preserve">
+    <value>No Admin was found.</value>
+  </data>
+  <data name="ADMIN_LISTED_SUCCESS" xml:space="preserve">
+    <value>Admin has been successfully listed.</value>
+  </data>
+  <data name="ADMIN_NAMESPACE_IS_REQUIRED" xml:space="preserve">
+    <value>The namespace is mandatory.</value>
+  </data>
+  <data name="ADMIN_NAME_MAX_LENGTH_ERROR" xml:space="preserve">
+    <value>The name cannot be longer than 50 characters.</value>
+  </data>
+  <data name="ADMIN_NAME_MIN_LENGTH_ERROR" xml:space="preserve">
+    <value>The name cannot be less than 2 characters.</value>
+  </data>
+  <data name="ADMIN_NAME_NUMERIC_FORBIDDEN" xml:space="preserve">
+    <value>Numeric characters cannot be used in the namespace.</value>
+  </data>
+  <data name="ADMIN_PHOTO_SIZE_EXCEEDS_LIMIT" xml:space="preserve">
+    <value>The photo size cannot be more than 500 KB.</value>
+  </data>
+  <data name="ADMIN_SURNAME_FIELD_IS_REQUIRED" xml:space="preserve">
+    <value>The last name field is mandatory.</value>
+  </data>
+  <data name="ADMIN_SURNAME_MAX_LENGTH_ERROR" xml:space="preserve">
+    <value>The last name cannot be longer than 50 characters.</value>
+  </data>
+  <data name="ADMIN_SURNAME_MIN_LENGTH_ERROR" xml:space="preserve">
+    <value>The last name cannot be less than 2 characters.</value>
+  </data>
+  <data name="ADMIN_SURNAME_NUMERIC_FORBIDDEN" xml:space="preserve">
+    <value>Numeric characters cannot be used in the last name field.</value>
+  </data>
+  <data name="ADMIN_UPDATE_ERROR" xml:space="preserve">
+    <value>An error occurred during the admin update.</value>
+  </data>
+  <data name="ADMIN_UPDATE_SUCCESS" xml:space="preserve">
+    <value>The admin has been successfully updated.</value>
+  </data>
+  <data name="ADMIN_VALID_EMAIL_REQUIRED" xml:space="preserve">
+    <value>A valid e-mail address must be entered.</value>
+  </data>
+  <data name="CATEGORY_CREATED_SUCCESS" xml:space="preserve">
+    <value>Category has been created successfully.</value>
+  </data>
+  <data name="CATEGORY_CREATE_FAILED" xml:space="preserve">
+    <value>An error occurred while creating category.</value>
+  </data>
+  <data name="CATEGORY_DELETED_SUCCESS" xml:space="preserve">
+    <value>Category has been deleted successfully.</value>
+  </data>
+  <data name="CATEGORY_DELETE_FAILED" xml:space="preserve">
+    <value>An error occurred while deleting category.</value>
+  </data>
+  <data name="CATEGORY_FOUND_SUCCESS" xml:space="preserve">
+    <value>Category was succesfully found.</value>
+  </data>
+  <data name="CATEGORY_GET_FAILED" xml:space="preserve">
+    <value>The category could not be retrieved.</value>
+  </data>
+  <data name="CATEGORY_LISTED_SUCCESS" xml:space="preserve">
+    <value>The category list was successfully retrieved.</value>
+  </data>
+  <data name="CATEGORY_LIST_EMPTY" xml:space="preserve">
+    <value>The company list is empty.</value>
+  </data>
+  <data name="CATEGORY_LIST_FAILED" xml:space="preserve">
+    <value>An error occurred while retrieving the category list.</value>
+  </data>
+  <data name="CATEGORY_MAX_LENGTH" xml:space="preserve">
+    <value>Cannot exceed 128 characters</value>
+  </data>
+  <data name="CATEGORY_MIN_LENGTH" xml:space="preserve">
+    <value>Must be at least 2 characters long</value>
+  </data>
+  <data name="CATEGORY_NAMESPACE_IS_REQUIRED" xml:space="preserve">
+    <value>This field cannot be empty</value>
+  </data>
+  <data name="CATEGORY_NOT_FOUND" xml:space="preserve">
+    <value>The category was not found.</value>
+  </data>
+  <data name="CATEGORY_UPDATED_FAILED" xml:space="preserve">
+    <value>An error occurred while updatingg the category.</value>
+  </data>
+  <data name="CATEGORY_UPDATED_SUCCESS" xml:space="preserve">
+    <value>The category was successfully updated.</value>
+  </data>
+  <data name="BRANCH_COMPANY_RELATION" xml:space="preserve">
+    <value>Select a Company</value>
+  </data>
+  <data name="ADMIN_GETBYID_SUCCESS" xml:space="preserve">
+    <value>Admin found successfully.</value>
+  </data>
+  <data name="PROMOTION_PRODUCT_RELATION" xml:space="preserve">
+    <value>Please Select a Product!</value>
+  </data>
+  <data name="PROMOTION_END_DATE_GREATER_THAN_START_DATE" xml:space="preserve">
+    <value>The promotion end date cannot be before the start date</value>
+  </data>
+  <data name="PROMOTION_END_DATE_REQUIRED" xml:space="preserve">
+    <value>Promotion end date is required!</value>
+  </data>
+  <data name="PROMOTION_IS_ACTIVE_REQUIRED" xml:space="preserve">
+    <value>Choose promotion activation!</value>
+  </data>
+  <data name="PROMOTION_START_DATE_GREATER_THAN_TODAY" xml:space="preserve">
+    <value>The promotion can start from today or any date thereafter</value>
+  </data>
+  <data name="PROMOTION_START_DATE_REQUIRED" xml:space="preserve">
+    <value>Promotion start date is required!</value>
+  </data>
+  <data name="PROMOTION_START_DATE_LESS_THAN_END_DATE" xml:space="preserve">
+    <value>Promotion start date less than end date!</value>
+  </data>
+  <data name="PROMOTION_START_DATE_NOT_EQUAL_END_DATE" xml:space="preserve">
+    <value>Promotion start and end date cannot be the same date!</value>
+  </data>
+  <data name="BRANCH_COMPANY_LISTED_DELETED" xml:space="preserve">
+    <value>Company deleted</value>
+  </data>
+  <data name="EMPLOYEE_TITLE_REQUIRED" xml:space="preserve">
+    <value>Select a Title!</value>
+  </data>
+  <data name="COUNTRY_CREATE_ERROR" xml:space="preserve">
+    <value>An error occured while creating country.</value>
+  </data>
+  <data name="COUNTRY_CREATE_SUCCESS" xml:space="preserve">
+    <value>The country was successfully created.</value>
+  </data>
+  <data name="COUNTRY_DELETE_ERROR" xml:space="preserve">
+    <value>An error occurred while deleting the country.</value>
+  </data>
+  <data name="COUNTRY_DELETE_SUCCESS" xml:space="preserve">
+    <value>The country was successfully deleted.</value>
+  </data>
+  <data name="COUNTRY_GETBYID_ERROR" xml:space="preserve">
+    <value>Failed to Bring Country</value>
+  </data>
+  <data name="COUNTRY_GETBYID_SUCCESS" xml:space="preserve">
+    <value>Country Has Been Brought Successfully</value>
+  </data>
+  <data name="COUNTRY_LISTED_ERROR" xml:space="preserve">
+    <value>An error occurred while listing countries.</value>
+  </data>
+  <data name="COUNTRY_LISTED_NOTFOUND" xml:space="preserve">
+    <value>Country Not Found.</value>
+  </data>
+  <data name="COUNTRY_LISTED_SUCCESS" xml:space="preserve">
+    <value>Country Has Been Listed Successfully.</value>
+  </data>
+  <data name="COUNTRY_NOT_FOUND" xml:space="preserve">
+    <value>Country not found.</value>
+  </data>
+  <data name="COUNTRY_UPDATE_ERROR" xml:space="preserve">
+    <value>An error occurred while updating the country</value>
+  </data>
+  <data name="COUNTRY_UPDATE_SUCCESS" xml:space="preserve">
+    <value>The country was successfully updated</value>
+  </data>
+  <data name="COUNTRY_NAME_MAXIMUM_LENGTH" xml:space="preserve">
+    <value>Cannot exceed 30 characters!</value>
+  </data>
+  <data name="COUNTRY_NAME_MINIMUM_LENGTH" xml:space="preserve">
+    <value>Must be at least 2 characters long</value>
+  </data>
+  <data name="POPULATION_MUST_BE_GREATER_THAN_ZERO" xml:space="preserve">
+    <value>Population must be greater than zero</value>
+  </data>
+  <data name="CANCEL_MANAGER" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="DELETE_CONFIRM_MANAGER" xml:space="preserve">
+    <value>Are you sure you want to delete this manager?</value>
+  </data>
+  <data name="DELETE_CONFIRM_TITLE_MANAGER" xml:space="preserve">
+    <value>Delete Manager</value>
+  </data>
+  <data name="DELETE_MANAGER" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DELETE_PRODUCT" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="CITY_CREATED_ERROR" xml:space="preserve">
+    <value>Error occurred while creating the city.</value>
+  </data>
+  <data name="CITY_CREATED_SUCCESS" xml:space="preserve">
+    <value>City created successfully.</value>
+  </data>
+  <data name="CITY_DELETED_ERROR" xml:space="preserve">
+    <value>Error occurred while deleting the city.</value>
+  </data>
+  <data name="CITY_DELETED_SUCCESS" xml:space="preserve">
+    <value>City deleted successfully.</value>
+  </data>
+  <data name="CITY_GET_SUCCESS" xml:space="preserve">
+    <value>City retrieved successfully.</value>
+  </data>
+  <data name="CITY_LISTED_EMPTY" xml:space="preserve">
+    <value>No cities found to list.</value>
+  </data>
+  <data name="CITY_LISTED_ERROR" xml:space="preserve">
+    <value>Error occurred while listing the cities.</value>
+  </data>
+  <data name="CITY_LISTED_SUCCESS" xml:space="preserve">
+    <value>Cities listed successfully.</value>
+  </data>
+  <data name="CITY_NAME_CANNOT_BE_EMPTY" xml:space="preserve">
+    <value>City name cannot be empty.</value>
+  </data>
+  <data name="CITY_NAME_CANNOT_CONTAIN_NUMBER" xml:space="preserve">
+    <value>City name cannot contain numbers.</value>
+  </data>
+  <data name="CITY_NOT_FOUND" xml:space="preserve">
+    <value>City not found.</value>
+  </data>
+  <data name="CITY_UPDATED_ERROR" xml:space="preserve">
+    <value>Error occurred while updating the city.</value>
+  </data>
+  <data name="CITY_UPDATED_SUCCESS" xml:space="preserve">
+    <value>City updated successfully.</value>
+  </data>
+  <data name="COUNTRY_POPULATİON_NOT_EMPTY" xml:space="preserve">
+    <value>This field cannot be empty</value>
+  </data>
+  <data name="ORDER_DISCOUNT_VALIDATION" xml:space="preserve">
+    <value>Discount rate must be between 0 and 100.</value>
+  </data>
+  <data name="CUSTOMER_COMPANY_RELATION" xml:space="preserve">
+    <value>Please select a company for the customer.</value>
+  </data>
+  <data name="PRODUCT_COMPANY_DELETED" xml:space="preserve">
+    <value>Company Deleted!</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_CREATED_SUCCESS" xml:space="preserve">
+    <value>Stock Type Size created successfully.</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_CREATE_FAILED" xml:space="preserve">
+    <value>Failed to create Stock Type Size.</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_DELETED_SUCCESS" xml:space="preserve">
+    <value>Stock Type Size deleted successfully.</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_DELETE_FAILED" xml:space="preserve">
+    <value>Failed to delete Stock Type Size.</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_FOUND_SUCCESS" xml:space="preserve">
+    <value>Stock Type Size found successfully.</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_GET_FAILED" xml:space="preserve">
+    <value>The stock type size could not be retrieved.</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_LISTED_SUCCESS" xml:space="preserve">
+    <value>Stock Type Sizes listed successfully.</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_LIST_EMPTY" xml:space="preserve">
+    <value>No Stock Type Sizes found to list.</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_LIST_FAILED" xml:space="preserve">
+    <value>Failed to list Stock Type Sizes.</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_MAX_LENGTH" xml:space="preserve">
+    <value>Cannot exceed 128 characters!</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_MIN_LENGTH" xml:space="preserve">
+    <value>Must be at least 1 characters long!</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_NOT_EMPTY" xml:space="preserve">
+    <value>This field cannot be empty!</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_NOT_FOUND" xml:space="preserve">
+    <value>Stock Type Size not found.</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_UPDATE_FAILED" xml:space="preserve">
+    <value>An error occurred while updating the stock type size.</value>
+  </data>
+  <data name="STOCK_TYPE_SIZE_UPDATE_SUCCESS" xml:space="preserve">
+    <value>Stock Type Size updated successfully.</value>
+  </data>
+  <data name="PROMOTION_COMPANY_DELETED" xml:space="preserve">
+    <value>Company deleted!</value>
+  </data>
+  <data name="PROMOTION_PRODUCT_DELETED" xml:space="preserve">
+    <value>Product deleted!</value>
+  </data>
+  <data name="MANAGER_CREATED_SUCCESS" xml:space="preserve">
+    <value>Manager created successfully.</value>
+  </data>
+  <data name="MANAGER_CREATE_FAILED" xml:space="preserve">
+    <value>An error occurred while creating the manager.</value>
+  </data>
+  <data name="MANAGER_DELETED_SUCCESS" xml:space="preserve">
+    <value>Manager deleted successfully.</value>
+  </data>
+  <data name="MANAGER_DELETE_FAILED" xml:space="preserve">
+    <value>An error occurred while deleting the manager.</value>
+  </data>
+  <data name="MANAGER_EMAIL_INVALID" xml:space="preserve">
+    <value>Please enter a valid email address!</value>
+  </data>
+  <data name="MANAGER_EMAIL_NOT_EMPTY" xml:space="preserve">
+    <value>Email cannot be empty!</value>
+  </data>
+  <data name="MANAGER_FIRST_NAME_INVALID_CHARS" xml:space="preserve">
+    <value>First name cannot contain special characters or numbers!</value>
+  </data>
+  <data name="MANAGER_FIRST_NAME_MAX_LENGTH" xml:space="preserve">
+    <value>First name cannot exceed 128 characters!</value>
+  </data>
+  <data name="MANAGER_FIRST_NAME_MIN_LENGTH" xml:space="preserve">
+    <value>First name must be at least 2 characters long!</value>
+  </data>
+  <data name="MANAGER_FIRST_NAME_NOT_EMPTY" xml:space="preserve">
+    <value>First name cannot be empty!</value>
+  </data>
+  <data name="MANAGER_FOUND_SUCCESS" xml:space="preserve">
+    <value>Manager found successfully.</value>
+  </data>
+  <data name="MANAGER_GET_FAILED" xml:space="preserve">
+    <value>An error occurred while retrieving the manager data.</value>
+  </data>
+  <data name="MANAGER_LAST_NAME_INVALID_CHARS" xml:space="preserve">
+    <value>Last name cannot contain special characters or numbers!</value>
+  </data>
+  <data name="MANAGER_LAST_NAME_MAX_LENGTH" xml:space="preserve">
+    <value>Last name cannot exceed 128 characters!</value>
+  </data>
+  <data name="MANAGER_LAST_NAME_MIN_LENGTH" xml:space="preserve">
+    <value>Last name must be at least 2 characters long!</value>
+  </data>
+  <data name="MANAGER_LAST_NAME_NOT_EMPTY" xml:space="preserve">
+    <value>Last name cannot be empty!</value>
+  </data>
+  <data name="MANAGER_LISTED_SUCCESS" xml:space="preserve">
+    <value>Managers listed successfully.</value>
+  </data>
+  <data name="MANAGER_LIST_EMPTY" xml:space="preserve">
+    <value>Manager list is empty.</value>
+  </data>
+  <data name="MANAGER_LIST_FAILED" xml:space="preserve">
+    <value>An error occurred while listing the managers.</value>
+  </data>
+  <data name="MANAGER_NOT_FOUND" xml:space="preserve">
+    <value>Manager not found.</value>
+  </data>
+  <data name="MANAGER_UPDATE_FAILED" xml:space="preserve">
+    <value>An error occurred while updating the manager.</value>
+  </data>
+  <data name="MANAGER_UPDATE_SUCCESS" xml:space="preserve">
+    <value>Manager updated successfully.</value>
+  </data>
+  <data name="EMPLOYEE_TURKISH_CHAR" xml:space="preserve">
+    <value>The entered information must not contain Turkish characters (ç,ı,ğ,ö,ş,ü,Ç,İ,Ğ,Ö,Ş,Ü).</value>
+  </data>
+  <data name="COUNTRY_NAME_MUST_BE_UNIQUE" xml:space="preserve">
+    <value>Country name must be unique.</value>
+  </data>
+  <data name="CITY_NAME_MUST_BE_UNIQUE" xml:space="preserve">
+    <value>City name must be unique</value>
+  </data>
+  <data name="COUNTRY_NAME_SHOULD_BE_STRING" xml:space="preserve">
+    <value>Country name must be string</value>
+  </data>
+  <data name="CHANGE_PASSWORD_ERROR" xml:space="preserve">
+    <value>Password change failed</value>
+  </data>
+  <data name="CHANGE_PASSWORD_SUCCESS" xml:space="preserve">
+    <value>Password change success</value>
+  </data>
+  <data name="StockTypeSizeIndex" xml:space="preserve">
+    <value>Stock Type Size Index</value>
+  </data>
+  <data name="Update_Employee" xml:space="preserve">
+    <value>Update Employee</value>
+  </data>
+  <data name="The_information_entered_is_not_valid." xml:space="preserve">
+    <value>The information entered is not valid.</value>
+  </data>
+  <data name="An_error_occurred_while_updating_the_profile" xml:space="preserve">
+    <value>An error occurred while updating the profile</value>
+  </data>
+  <data name="Kategorileri_getirirken_bir_hata_meydana_geldi" xml:space="preserve">
+    <value>An error occurred while fetching categories</value>
+  </data>
+  <data name="No_photo_selected_and_no_existing_photo_found" xml:space="preserve">
+    <value>No photo selected and no existing photo found.</value>
+  </data>
+  <data name="Profile_updated_successfully" xml:space="preserve">
+    <value>Profile updated successfully.</value>
+  </data>
+  <data name="Şehirleri_getirirken_bir_hata_meydana_geldi" xml:space="preserve">
+    <value>An error occurred while fetching cities</value>
+  </data>
+  <data name="Customer_and_Location" xml:space="preserve">
+    <value>Customer and Location</value>
+  </data>
+  <data name="Sales_and_Marketing" xml:space="preserve">
+    <value>Sales and Marketing</value>
+  </data>
+  <data name="PRODUCT_CANNOT_DELETE_IS_IN_ORDER" xml:space="preserve">
+    <value>The product you want to delete is linked to an order. Would you like to make the product Inactive?</value>
+  </data>
+  <data name="PRODUCT_PASSIVED_SUCCESS" xml:space="preserve">
+    <value>Product passived successfully</value>
+  </data>
+  <data name="PASSIVE_PRODUCT" xml:space="preserve">
+    <value>Passive Product</value>
+  </data>
+  <data name="EMPLOYEE_INVALID_EMAIL_DOMAIN" xml:space="preserve">
+    <value>Email field must be in appropriate format</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Managementt" xml:space="preserve">
+    <value>Management</value>
+  </data>
+  <data name="No matching results" xml:space="preserve">
+    <value>Eşleşen sonuç yok</value>
+  </data>
+  <data name="Select Country" xml:space="preserve">
+    <value>Ulke Seciniz</value>
+  </data>
+  <data name="PRODUCT_CATEGORY_RELATION" xml:space="preserve">
+    <value>Please select the product's category</value>
+  </data>
+  <data name="PRODUCT_COMPANY_RELATION" xml:space="preserve">
+    <value>Please select the product's company</value>
+  </data>
+  <data name="Select_Category" xml:space="preserve">
+    <value>Select Category</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="CityName" xml:space="preserve">
+    <value>City Name</value>
+  </data>
+  <data name="CustomerDetails" xml:space="preserve">
+    <value>Customer Details</value>
+  </data>
+  <data name="CUSTOMER_CITY_RELATION" xml:space="preserve">
+    <value>Please select a city for the customer</value>
+  </data>
+  <data name="CUSTOMER_COUNTRY_RELATION" xml:space="preserve">
+    <value>Please select a country for the customer</value>
+  </data>
+  <data name="SelectCity" xml:space="preserve">
+    <value>Select City</value>
+  </data>
+  <data name="COMPANY_CANNOT_DELETE_IS_IN_ORDER" xml:space="preserve">
+    <value>The company you want to delete is linked to an order. Would you like to make the company Inactive?</value>
+  </data>
+  <data name="PASSIVE_COMPANY" xml:space="preserve">
+    <value>Passive Company</value>
+  </data>
+  <data name="COMPANY_PASSIVED_SUCCESS" xml:space="preserve">
+    <value>Company passived successfully</value>
+  </data>
+</root>

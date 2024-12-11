@@ -1,0 +1,71 @@
+﻿@model BaSalesManagementApp.MVC.Models.EmployeeVMs.EmployeeCreateVM
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Resource> localizer
+
+@{
+    ViewData["Title"] = localizer["Create_Employee"];
+}
+
+<div class="content-wrapper">
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <h4 class="py-3 mb-4">
+            <span class="text-muted fw-light">@localizer["Employee"] /</span>
+            @localizer["Create"]
+        </h4>
+        <div class="row">
+            <div class="content-wrapper">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <form asp-action="Create" enctype="multipart/form-data">
+                                <div class="mb-3">
+                                    <label asp-for="FirstName" class="form-label">@localizer["FirstName"]</label>
+                                    <input asp-for="FirstName" class="form-control" />
+                                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label asp-for="LastName" class="form-label">@localizer["LastName"]</label>
+                                    <input asp-for="LastName" class="form-control" />
+                                    <span asp-validation-for="LastName" class="text-danger"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label asp-for="Email" class="form-label">@localizer["Email"]</label>
+                                    <input asp-for="Email" type="email" class="form-control" />
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label asp-for="Photo" class="form-label">@localizer["Photo"]</label>
+                                    <input asp-for="Photo" type="file" class="form-control" accept=".jpg,.jpeg,.png,.gif,.tiff,.bmp" />
+                                    <span asp-validation-for="Photo" class="text-danger"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label asp-for="Title" class="form-label">@localizer["Role"]</label>
+                                    <select asp-for="Title" class="form-control" asp-items="Model.RoleOptions"></select>
+                                    <span asp-validation-for="Title" class="text-danger"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label asp-for="CompanyId" class="form-label">@localizer["Company"]</label>
+                                    <select asp-for="CompanyId" class="form-control" asp-items="Model.CompanyOptions"></select>
+                                    <span asp-validation-for="CompanyId" class="text-danger"></span>
+                                </div>
+                                <div>
+                                    <input type="submit" value="@localizer["Create"]" class="btn btn-primary" />
+                                    <a asp-action="Index" class="btn btn-secondary">@localizer["BackToList"]</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       @*  <div class="mt-3">
+            <a asp-action="Index">@localizer["BackToList"]</a>
+        </div> *@
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
